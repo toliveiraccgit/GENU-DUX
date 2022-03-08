@@ -1,0 +1,978 @@
+@media (min-width:0px){
+    /*-------------------------CABECALHO-----------------------*/
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+        height: 5.4rem;
+
+        padding-left: 8.125rem;
+        padding-right: 8.125rem;
+        padding-top: 1.063rem;
+        padding-bottom: 1.063rem;
+
+        overflow-y: visible;
+    }
+    .navegacao__cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5.986rem;
+    }
+    .secao__navegacao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2.813rem;
+    }
+    .item__navegacao{
+        font-family: var(--inter);
+        color: var(--low-light);
+        font-weight: var(--medium);
+
+        transition: all .15s ease-in-out;
+    }
+    .item__navegacao:hover{
+        color: var(--primary-dark);
+        transition: all .15s ease-in-out;
+    }
+    .container__dropdown{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+
+        height: 3.4rem;
+        width: 6.75rem;
+
+        cursor: pointer;
+
+        position: relative;
+        top: 1rem;
+    }
+    .container__botao___dropdown{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .5rem;
+
+        cursor: pointer;
+    }
+    .botao__produtos{
+        border: none;
+        background-color: transparent;
+    }
+    .seta__dropdown{
+        transition: all .2s ease-in-out;
+    }
+    .container__dropdown:hover  .botao__produtos{
+        color: #00BD62;
+
+        transition: all .15s ease-in-out;
+    }
+    .container__dropdown:hover  .seta__dropdown-color{
+        stroke: #00BD62;
+
+        transition: all .15s ease-in-out;
+    }
+    .container__dropdown:hover  .seta__dropdown{
+        transition: all .2s ease-in-out;
+
+        transform: rotate(180deg)
+    }
+    .container__dropdown:hover .container__conteudo___dropdown{
+        visibility: visible;
+
+        animation: animaDropdwon .3s ease-in-out forwards;
+    }
+    .container__conteudo___dropdown{
+        display: flex;
+        flex-direction: column;
+
+        width: 14.4rem;
+
+        visibility: hidden;
+
+        background: #FFFFFF;
+        border-radius: 8px;
+
+        filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.1));
+
+        position: relative;
+        left: 4.2rem;
+
+        padding-top: 1.714rem;
+        padding-left: 1.2rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1.5rem;
+
+        top: -15px;
+        opacity: 0;
+        
+        z-index: 200;
+    }
+    .lista__navegacao___dropdown{
+        display: flex;
+        flex-direction: column;
+        gap: 1.63rem;
+    }
+    .lista__navegacao___dropdown > li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.606rem;
+    }
+    .item__lista___dropdown{
+        font-family: var(--inter);
+        color: var(--low-light);
+        font-weight: var(--medium);
+
+        font-size: 14px;
+
+        transition: all .15s ease-in-out;
+
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+    .item__lista___dropdown:hover{
+        color: #00BD62;
+
+        transition: all .15s ease-in-out;
+    }
+    .item__saude-ocupacional:hover .vetor__saude-ocupacional{
+        stroke: #00BD62;
+
+        transition: all .1s ease-in-out;
+    }
+    .item__seguranca-trabalho:hover .vetor__seguranca-trabalho{
+        stroke: #00BD62;
+
+        transition: all .1s ease-in-out;
+    }
+    .item__relatorios:hover .vetor__relatorios{
+        stroke: #00BD62;
+
+        transition: all .1s ease-in-out;
+    }
+    .item__e-social:hover .vetor__e-social{
+        stroke: #00BD62;
+        
+        transition: all .1s ease-in-out;
+    }
+    .item__integracao-sap:hover .vetor__integracao-sap{
+        stroke: #00BD62;
+
+        transition: all .1s ease-in-out;
+    }
+    .vetor__saude-ocupacional, .vetor__seguranca-trabalho, .vetor__relatorios, .vetor__e-social, .vetor__integracao-sap{
+        transition: all .3s ease-in-out;
+    }
+    @keyframes animaDropdwon {
+        to{
+            top: 0%;
+            opacity: 1;
+        }
+    }
+    .secao__login___cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2.5rem;
+    }
+    .botao__login{
+        font-family: var(--inter);
+        font-weight: var(--semi-bold);
+
+        color: var(--primary-dark);
+
+        padding: 1rem 1.3rem;
+
+        border: 1px solid var(--primary-dark);
+        border-radius: 8px;
+
+        transition: all .15s ease-in-out;
+    }
+    .botao__login:hover{
+        color: #FFFFFF;
+
+        background-color: var(--primary-dark);
+        transition: all .15s ease-in-out;
+    }
+
+
+    /*-------------------------CONTEUDO-----------------------*/
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        /*-------------------------BANNER-----------------------*/
+        .secao__banner{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 82vw;
+
+            padding-top: 6rem;
+            
+        }
+        .secao__info___banner{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            width: 30.125rem;
+
+            position: relative;
+
+            animation: animaInfoBanner 1.2s ease-in-out forwards;
+        }
+        .titulo__info___banner{
+            font-family: 'Graphik-Bold';
+            font-size: 48px;
+
+            line-height: 120%;
+
+            color: var(--low-dark);
+
+            margin: 0%;
+        }
+        .descricao__info___banner{
+            font-family: 'Graphik-Regular';
+            font-size: 16px;
+
+            color: var(--low-light);
+
+            margin: 0%;
+        }
+        .container__saiba___banner{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2.104rem;
+
+            margin-top: 1.5rem;
+        }
+        .botao__agendar-apresentacao{
+            background-color: var(--primary-dark);
+            border-radius: 8px;
+
+            border: 1px solid #FFFFFF;
+
+            padding: 1rem;
+
+            font-family: 'Graphik-SemiBold';
+            font-size: 14px;
+
+            transition: all .15s ease-in-out;
+        }
+        .botao__agendar-apresentacao:hover{
+            border: 1px solid var(--primary-dark);
+
+            background-color: transparent;
+
+            color: var(--primary-dark);
+
+            transition: all .15s ease-in-out;
+        }
+        .botao__saiba-mais{
+            font-family: 'Graphik-Medium';
+            font-size: 14px;
+
+            color: var(--high-dark);
+
+            padding-left: 1.7rem;
+            padding-top: .12rem;
+            padding-bottom: .1rem;
+
+            background-image: url("../../Assets/Vetores/vetor-saiba-mais.svg");
+            background-position-x: left;
+            background-position-y: -.1rem;
+            background-repeat: no-repeat;
+        
+        }
+        .imagem__banner{
+            width: 36.469rem;
+            height: 30.875rem;
+
+            position: relative;
+
+            animation: animaImagemBanner 1.2s ease-in-out forwards;
+        }
+        @keyframes animaImagemBanner {
+            0%{
+                right: -10rem;
+                opacity: 0;
+            }
+            100%{
+                right: 0%;
+                opacity: 1;
+            }
+        }
+        @keyframes animaInfoBanner {
+            0%{
+                left: -10rem;
+                opacity: 0;
+            }
+            100%{
+                left: 0%;
+                opacity: 1;
+            }
+        }
+        /*----------------------PRODUTOS---------------------*/
+
+        .secao__produtos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding-top: 11.688rem;
+            padding-bottom: 6rem;
+        }
+        .cabecalho__secao___produtos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            margin-bottom: 3.063rem;
+        }
+        .titulo__cabecalho___produtos{
+            font-family: var(--inter);
+            font-weight: var(--bold);
+            font-size: 32px;
+
+            line-height: 120%;
+
+            color: var(--low-dark);
+
+            margin: 0%;
+        }
+        .descricao__cabecalho___produtos{
+            font-family: var(--inter);
+            font-weight: var(--semi-bold);
+            font-size: 16px;
+
+            color: var(--low-light);
+
+            margin: 0%;
+
+            width: 43.75rem;
+            text-align: center;
+        }
+        .secao__tabs___produtos{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .tablinks{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: .8rem;
+        }
+        .tabs-produtos{
+            padding-top: 1.3rem;
+            padding-bottom: 1.3rem;
+            padding-right: 1.5rem;
+            padding-left: 1.625rem;
+
+            background-color: var(--primary-pastel);
+
+            border-radius: 8px;
+
+            border: none;
+
+            color: var(--primary-dark);
+
+            font-family: var(--inter);
+            font-weight: var(--regular);
+            font-size: 14px;
+        }
+        .active{
+            background-color: var(--primary-dark);
+
+            color: #FFFFFF;
+        }
+
+        /*------------------------TABS---------------------*/
+
+        .secao__tab-produto{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5.135rem;
+
+            padding-top: 4.563rem;
+        }
+        .secao__info___tab{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            width: 27.365rem;
+        }
+        .titulo__info___tab{
+            font-family: 'Graphik-Bold';
+            font-size: 48px;
+
+            color: var(--low-dark);
+
+            margin: 0%;
+        }
+        .descricao__info___tab{
+            font-family: 'Graphik-Regular';
+            font-size: 16px;
+
+            line-height: 24px;
+
+            color: var(--low-light);
+
+            margin: 0%;
+        }
+        .botao__saiba-mais___tab{
+            width: 8.313rem;
+
+
+            border: 1px solid #00BD62;
+            border-radius: 8px;
+
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 2.75rem;
+            padding-right: .8rem;
+
+
+            font-family: 'Graphik-SemiBold';
+            font-size: 14px;
+
+            color: var(--primary-dark);
+
+            background-image: url("../../Assets/Vetores/vetor-saiba-mais-verde.svg");
+            background-repeat: no-repeat;
+            background-position: 1rem center ;
+        }
+        .secao__cards___tab{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            width: 46vw;
+            height: auto;
+        }
+        .container__card___tab{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.5rem;
+            border: 1px solid #00BD62;
+            border-radius: 8px;
+
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            padding-left: 1.625rem;
+            padding-right: 1.5rem;
+
+            transition: all .15s ease-in-out;
+
+            cursor: pointer;
+        }
+        .container__card___tab:nth-child(1){
+            margin-bottom: 2rem;
+        }
+        .container__card___tab:nth-child(2){
+            margin-bottom: 2rem;
+        }
+        .titulo__card___tab{
+            font-family: var(--inter);
+            font-weight: var(--bold);
+            font-size: 16px;
+
+            color: var(--low-dark);
+
+            margin: 0%;
+            margin-top: .5rem;
+
+            transition: all .15s ease-in-out;
+        }
+        .descricao__card___tab{
+            font-family: 'Graphik-Regular';
+            font-size: 14px;
+
+            line-height: 140%;
+
+            color: var(--low-light);
+
+            margin: 0%;
+
+            margin: 0%;
+
+            width: 18vw;
+
+            transition: all .15s ease-in-out;
+        }
+        .container__card___tab:hover{
+            background-color: var(--primary-dark);
+
+            cursor: pointer;
+
+            transition: all .15s ease-in-out;
+        }
+        .container__card___tab:hover .titulo__card___tab{
+            color: #FFFFFF;
+
+            transition: all .15s ease-in-out;
+        }
+        .container__card___tab:hover .descricao__card___tab{
+            color: #FFFFFF;
+
+            transition: all .15s ease-in-out;
+        }
+        .container__card___tab:hover .background-vetor{
+            fill: #FFFFFF;
+
+            transition: all .15s ease-in-out;
+        }
+
+        /*----------------------CLIENTES-------------------*/
+
+        .secao__clientes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5.5rem;
+
+            width: 100vw;
+
+            background-color: var(--primary-dark);
+
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+        .titulo__clientes{
+            font-family: var(--inter);
+            font-size: 32px;
+            font-weight: var(--semi-bold);
+
+            color: #FFFFFF;
+        }
+        .secao__imagens___clientes{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 62vw;
+
+        }
+        /*---------------------------SECAO-DEPOIMENTO----------------------------*/
+        .secao__depoimentos{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 5.499rem;
+
+            background-color: #000000;
+
+            width: 100vw;
+
+            padding-top: 6rem;
+            padding-bottom: 12.25rem;
+        }
+        .secao__info___depoimentos{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 25.5rem;
+        }
+        .titulo__info___depoimentos{
+            font-family: 'Graphik-SemiBold';
+            font-size: 32px;
+
+            color: #FFFFFF;
+
+            margin: 0%;
+
+        }
+        .descricao__info___depoimentos{
+            font-family: 'Graphik-Regular';
+            font-size: 16px;
+
+            line-height: 24px;
+
+            color: var(--low-light);
+
+            margin: 0%;
+        }
+        .secao__lista-depoimentos{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            width: auto;
+        }
+        .lista-depoimentos{
+            display: flex;
+            flex-direction: row;
+            width: auto;
+            overflow-x: visible;
+            border-radius: 8px;
+
+            transition: all .4s ease-out;
+        }
+        .container__carousel-depoimentos{
+            width: 46.8vw;
+
+            overflow-x: hidden;
+
+            border-radius: 8px;
+        }
+        .item__lista___depoimentos{
+            display: flex;
+            flex-direction: row;
+            gap: 2.5rem;
+
+            width: 46.8vw;
+            height: auto;
+
+            border-radius: 8px;
+        }
+        .imagem__depoimento{
+            width: 17.625rem;
+
+            border-radius: 8px;
+        }
+        .secao__conteudo___depoimento{
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+
+            width: 24.5vw;
+        }
+        .texto__depoimento{
+            font-family: var(--inter);
+            font-weight: var(--regular);
+            font-size: 16px;
+
+            line-height: 24px;
+
+            color: #FFFFFF;
+
+            width: 100%;
+        }
+        .container__info___perfil{
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .nome__perfil{
+            font-family: var(--inter);
+            font-weight: var(--bold);
+            font-size: 14px;
+
+            color: var(--primary-dark);
+        }
+        .cargo__perfil{
+            font-family: var(--inter);
+            font-weight: var(--regular);
+            font-size: 14px;
+
+            color: #FFFFFF;
+        }
+        .destaque__green-depoimento{
+            color: var(--primary-dark);
+
+            font-size: 24px;
+        }
+        .container__botao___caroussel-depoimentos{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2.261rem;
+
+            position: relative;
+            top: -2rem;
+            left: 20rem;
+        }
+        .botao__carrousel-depoimentos{
+            border: none;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: center;
+            padding: 1rem;
+        }
+        .botao__anterior___caroussel-depoimentos{
+            display: none;
+        }
+        .botao__proximo___caroussel-depoimentos{
+            background-image: url("../../Assets/Vetores/Setas/vetor-seta-direita-green.svg");
+        }
+        .carousel__indicadores-depoimentos{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: .5rem;
+
+            transition: all .4s ease-out;
+
+            height: 0.125rem;
+            border-radius: 8px;
+        }
+        .carousel__indicador-depoimentos{
+            background-color: #FFFFFF;
+            border: none;
+
+            height: 0.125rem;
+            width: 1.5rem;
+
+            border-radius: 1px;
+
+            transition: all .1s ease-in-out;
+        }
+        .carousel__indicador--ativo-depoimentos{
+            background-color: var(--primary-dark);
+        }
+        @media (min-width:1441px){
+            .container__carousel-depoimentos{
+                width: 42.063rem;
+            }
+            .item__lista___depoimentos{
+    
+                width: 42.063rem;
+            }
+            .texto__depoimento{
+                width: 22.438rem;
+            }
+        }
+
+        /*---------------------FALE-CONOSCO-------------------*/
+
+        .secao__fale-conosco{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 8.795rem;
+
+            width: 100vw;
+
+            background-color: #000000;
+
+            padding-bottom: 5.983rem;
+        }
+        .secao__form___fale-conosco{
+            display: flex;
+            flex-direction: column;
+
+            width: 25.75rem;
+        }
+        .titulo__fale-conosco{
+            font-family: 'Graphik-SemiBold';
+            font-size: 32px;
+
+            color: #FFFFFF;
+
+            margin: 0%;
+
+        }
+        .descricao__fale-conosco{
+            font-family: 'Graphik-Regular';
+            font-size: 16px;
+
+            line-height: 24px;
+
+            color: #F1F1F1;
+
+            margin: 0%;
+        }
+        .formulario__fale-conosco{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            margin-top: 2.668rem;
+
+        }
+        .input__fale-conosco{
+            font-family: 'Graphik-Regular';
+            font-size: 14px;
+
+            color: #FFFFFF;
+
+            margin: 0%;
+
+            background-color: transparent;
+            border: 1px solid #FFFFFF;
+            border-radius: 8px;
+
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .input__fale-conosco:focus{
+            outline: 1px solid var(--primary-dark);
+
+            border: 1px solid var(--primary-dark);
+        }
+        .botao__form___fale-conosco{
+            width: 25.52rem;
+
+            padding: 1rem;
+
+            background: #00BD62;
+
+            border: none;
+            border-radius: 8px;
+
+            margin-top: 1rem;
+
+            font-family: var(--inter);
+            font-weight: var(--semi-bold);
+            font-size: 14px;
+
+            color: #FFFFFF;
+        }
+
+        /*--------------------RODAPE------------------*/
+        .rodape{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+
+            padding: 5.625rem 0 6.875rem 0;
+
+            width: 100vw;
+        }
+        .secao__adress{
+            display: flex;
+            flex-direction: column;
+            width: 19.25rem;
+        }
+        .logo__genu{
+            width: 6.889rem;
+        }
+        .secao__redes-sociais{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1.156rem;
+
+            margin-top: 2.164rem;
+            margin-bottom: 5.445rem;
+        }
+        .secao__copyright{
+            display: flex;
+            flex-direction: column;
+        }
+        .texto__copyright{
+            font-family: 'Graphik-Regular';
+            font-size: 16px;
+
+            color: var(--low-medium);
+
+            padding-left: 1.5rem;
+
+            background-image: url("../../Assets/Vetores/vetor-cop.svg");
+            background-position: left center;
+            background-repeat: no-repeat;
+        }
+        .destaque__genu{
+            padding-left: .9rem;
+            margin-left: 0.438rem;
+
+            background-image: url("../../Assets/Vetores/vetor-elipse.svg");
+            background-position: left center;
+            background-repeat: no-repeat;
+
+            font-family: 'Graphik-SemiBold';
+        }
+        .container__termos{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: .25rem;
+
+            margin-top: 1.5rem;
+        }
+        .link__termo-privacidade{
+            font-family: 'Graphik-Regular';
+            font-size: 16px;
+
+            color: var(--low-medium);
+        }
+        .secao__navegacao___footer{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            width: 46vw;
+        }
+        .container__lista___navegacao{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+        .titulo__lista___navegacao{
+            font-family: var(--inter);
+            font-weight: var(--bold);
+            font-size: 16px;
+
+            color: var(--low-dark);
+        }
+        .lista__navegacao___footer{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+        .item__lista___footer{
+            font-family: var(--inter);
+            font-weight: var(--regular);
+            font-size: 16px;
+
+            color: var(--low-medium);
+
+            transition: all .15s ease-in-out;
+        }
+        .item__lista___footer:hover{
+            color: var(--primary-dark);
+
+            transition: all .15s ease-in-out;
+        }
+        .item__lista___email{
+            display: flex;
+            align-items: center;
+            gap: 0.604rem;
+        }
+        .item__lista___footer:hover .vetor-email{
+            stroke: #00BD62;
+        }
+        .item__lista___whataspp{
+            display: flex;
+            align-items: center;
+            gap: 0.604rem;
+        }
+        .item__lista___footer:hover .vetor-whatsapp{
+            fill: #00BD62;
+        }
+        .vetor-whatsapp{
+            transition: all .15s ease-in-out;
+        }
+        .vetor-email{
+            transition: all .15s ease-in-out;
+        }
+}

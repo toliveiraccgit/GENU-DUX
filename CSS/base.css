@@ -55,7 +55,7 @@ body a{
     color: #FFFFFF;
 }
 body{
-    overflow-x: hidden;
+    
     scroll-behavior: smooth;
 }
 
@@ -65,4 +65,8 @@ body{
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+}
+
+.destaque__green{
+    color: #00BD62;
 }
