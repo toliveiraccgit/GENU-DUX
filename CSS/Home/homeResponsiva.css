@@ -1,0 +1,103 @@
+@media (max-width:1200px){
+    /*-------------------------CABECALHO-----------------------*/
+    .cabecalho{
+        padding-left: 1.5rem;
+        padding-right: 1.688rem;
+
+        overflow-y: visible;
+    }
+    .secao__navegacao, .secao__login___cabecalho{
+        display: none;
+    }
+    .secao__navegacao___mobile{
+        display: block;
+    }
+    .botao__abre-menu{
+        background-color: transparent;
+        border: none;
+    }
+    /*-------------------------BANNER----------------------*/
+    .secao__banner{
+        width: 86vw;
+
+        padding-top: 2.5rem;
+    }
+    .secao__imagem___banner{
+        display: none;
+    }
+    .secao__info___banner {
+        gap: 0.875rem;
+    }
+    .titulo__info___banner {
+        font-size: 32px;
+
+        letter-spacing: .02rem;
+
+        line-height: 130%;
+    }
+    .descricao__info___banner {
+        font-family: 'Graphik-Regular';
+        font-size: 13.5px;
+
+        line-height: 170%;
+
+        color: var(--low-light);
+        margin: 0%;
+    }
+    .container__saiba___banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: 86vw;
+    }
+    .botao__agendar-apresentacao{
+        width: 86vw;
+        text-align: center;
+    }
+    /*----------------------PRODUTOS---------------------*/
+
+    .secao__produtos{
+        padding-top: 5rem;
+        padding-bottom: 6rem;
+    }
+    .cabecalho__secao___produtos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        margin-bottom: 2rem;
+    }
+    .titulo__cabecalho___produtos{
+        font-size: 24px;
+    }
+    .descricao__cabecalho___produtos{
+        font-size: 14px;
+
+        width: 20.5rem;
+    }
+    .secao__tabs___produtos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .tablinks{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: .8rem;
+    }
+    .tabs-produtos{
+        width: 86vw;
+        text-align: center;
+        font-size: 14px;
+    }
+    .active{
+        background-color: var(--primary-dark);
+
+        color: #FFFFFF;
+    }
+}
