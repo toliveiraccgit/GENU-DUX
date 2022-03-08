@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="./CSS/Home/home.css">
+        <link rel="stylesheet" href="./CSS/animacaoScroll.css">
         <link rel="stylesheet" href="./CSS/ComponentesCSS/cabecalho.css">
         <link rel="stylesheet" href="./CSS/ComponentesCSS/rodape.css">
         <style type="text/css" media="screen, print">
@@ -185,7 +186,7 @@
 
             <section class="secao__produtos">
 
-                <section class="cabecalho__secao___produtos">
+                <section class="cabecalho__secao___produtos anime-left">
 
                     <h2 class="titulo__cabecalho___produtos">Sistema <span class="destaque__green">completo</span> e <span class="destaque__green">eficiente</span></h2>
 
@@ -193,7 +194,7 @@
 
                 </section>
 
-                <section class="secao__tabs___produtos">
+                <section class="secao__tabs___produtos anime-right">
 
                     <button class="tablinks tab-saude-ocupacional tabs-produtos" id="defaultOpen" onclick="openTab(event, 'saude-ocupacional'), tabSaude()">
                         <svg class="vetor-tab-saude-ocupacional" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -234,7 +235,7 @@
 
                 </section>
 
-                <section class="secao__tab-produto tabcontent" id="saude-ocupacional">
+                <section class="secao__tab-produto tabcontent anime-left" id="saude-ocupacional">
 
                     <section class="secao__info___tab">
 
@@ -309,7 +310,7 @@
 
                 </section>
 
-                <section class="secao__tab-produto tabcontent" id="seguranca-trabalho">
+                <section class="secao__tab-produto tabcontent anime-left" id="seguranca-trabalho">
 
                     <section class="secao__info___tab">
 
@@ -384,7 +385,7 @@
 
                 </section>
 
-                <section class="secao__tab-produto tabcontent" id="relatorios">
+                <section class="secao__tab-produto tabcontent anime-left" id="relatorios">
 
                     <section class="secao__info___tab">
 
@@ -459,7 +460,7 @@
 
                 </section>
 
-                <section class="secao__tab-produto tabcontent" id="e-social">
+                <section class="secao__tab-produto tabcontent anime-left" id="e-social">
 
                     <section class="secao__info___tab">
 
@@ -534,7 +535,7 @@
 
                 </section>
 
-                <section class="secao__tab-produto tabcontent" id="integracao-sap">
+                <section class="secao__tab-produto tabcontent anime-left" id="integracao-sap">
 
                     <section class="secao__info___tab">
 
@@ -613,9 +614,9 @@
 
             <section class="secao__clientes">
 
-                <h7 class="titulo__clientes">Alguns dos nossos clientes</h7>
+                <h7 class="titulo__clientes anime-right">Alguns dos nossos clientes</h7>
 
-                <section class="secao__imagens___clientes">
+                <section class="secao__imagens___clientes anime-left">
 
                     <img src="./Assets/LogoEmpresas/AJiNOMOTO.svg" alt="imagem Cliente" class="imagem__cliente">
 
@@ -633,7 +634,7 @@
 
             <section class="secao__depoimentos">
 
-                <section class="secao__info___depoimentos">
+                <section class="secao__info___depoimentos anime-right">
 
                     <h8 class="titulo__info___depoimentos">Feedback de <span class="destaque__green">clientes</span> que <span class="destaque__green">aprovam</span> nosso serviço.</h8>
 
@@ -641,7 +642,7 @@
 
                 </section>
 
-                <section class="secao__lista-depoimentos">
+                <section class="secao__lista-depoimentos anime-left">
                         <div class="container__carousel-depoimentos">
 
                             <ul class="lista-depoimentos" data-lista-depoimentos>
@@ -730,13 +731,13 @@
 
             <section class="secao__fale-conosco">
 
-                <section class="secao__imagem___fale-conosco">
+                <section class="secao__imagem___fale-conosco anime-right">
 
                     <img src="./Assets/Imagens/ilustracao-form.png" alt="Fale Conosco" class="imagem__fale-conosco">
 
                 </section>
 
-                <section class="secao__form___fale-conosco">
+                <section class="secao__form___fale-conosco anime-left">
 
                     <h11 class="titulo__fale-conosco"><span class="destaque__green">Pronto</span> para deixar o <span class="destaque__green">GENU</span> cuidar de tudo?</h11>
 
@@ -759,7 +760,7 @@
 
         <footer class="rodape">
 
-            <section class="secao__adress">
+            <section class="secao__adress anime-right">
 
                 <img src="./Assets/Vetores/Logo-Genu.svg" alt="GENU" class="logo__genu">
 
@@ -791,7 +792,7 @@
 
             </section>
 
-            <section class="secao__navegacao___footer">
+            <section class="secao__navegacao___footer anime-left">
 
                 <div class="container__lista___navegacao">
                     <h12 class="titulo__lista___navegacao">Sobre nós</h12>
@@ -854,7 +855,129 @@
             </section>
 
         </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" type="text/javascript"></script>
+        <script>
+                // Adiciona a classe .js ao elemento HTML. Assim eu garanto que os elementos só serão escondidos caso o JavaScript esteja habilitado
+                    var root = document.documentElement;
+                    root.className += ' js';
 
+                    // Cria a função boxTop responsável por definir a distância entre o topo to elemento e a página
+                    function boxTop(idBox) {
+                        var boxOffset = $(idBox).offset().top;
+                        return boxOffset;
+                    }
+
+                    // Verifica se o documento está pronto
+                    $(document).ready(function() {
+                        
+                                // target define os elementos que serão animados. Neste 	caso todos os que possuirem a classe .anime	
+                        var $target = $('.anime-left'),
+                                
+                                // animationClass define a classe que será injetada no elemento durante o scroll. É nessa classe que	definimos como a animação irá ocorrer
+                                animationClass = 'anime-init-left',
+                                
+                                // windowHeight pega a altura total da janela do browser
+                                windowHeight = $(window).height(),
+                                
+                                // offset é definido a partir da altura da janela, menos um quarto dessa atlura. Isso vai garantir que o browser não fique com um espaço grande em branco
+                                offset = windowHeight - (windowHeight / 7);
+
+                        // animeScroll é a função responsável por adicionar a classe animationClass ao elemento da página.
+                        function animeScroll() {
+                            
+                            // documentTop vai definir a distância entre o topo da página e o scroll. O valor é atualizado sempre a função animeScroll é ativada.
+                            var documentTop = $(document).scrollTop();
+                            
+                            // target.each serve para adicionarmos a função a cada elemento que tiver a classe do target. Assim garantimos que elementos com distâncias diferentes do topo da página, animem no momento correto
+                            $target.each(function() {
+                                
+                                // o if verifica se a distância entre o topo da página e o scroll é maior que a distância do elemento - o valor fo offset
+                                if (documentTop > boxTop(this) - offset) {
+                                    
+                                    // caso seja verdadeiro, ele vai adicionar a classe que está em animationClass ao elemento
+                                    $(this).addClass(animationClass);
+                                } else {
+                                    
+                                    // caso seja falso ele vai remover a classe do elemento. Se você não quiser que a animação ocorra mais de uma vez, ou seja, quando o cliente voltar o scroll para cima os elementos continuem fixos, basta remover este else
+                                    $(this).removeClass(animationClass);
+                                }
+                            });
+                        }
+                        
+                        // dispara a função animeScroll, nesse primeiro momento ele dispara para verificar se já não existe nenhum elemento na página que esteja no campo de visão do usuário
+                        animeScroll();
+                        
+                        // com o document.scroll vamos verificar sempre que um evento de scroll ocorrer na página
+                        $(document).scroll(function() {
+                            
+                            // quando o evento de scroll ocorre disparamos novamente a função animeScroll. Com um setTimeout para evetira que ela seja disparada diversas vezes
+                            setTimeout(function() {
+                                animeScroll()
+                            }, 150);
+                        });
+                    });
+        </script>
+        <script>
+            // Adiciona a classe .js ao elemento HTML. Assim eu garanto que os elementos só serão escondidos caso o JavaScript esteja habilitado
+                var root = document.documentElement;
+                root.className += ' js';
+    
+                // Cria a função boxTop responsável por definir a distância entre o topo to elemento e a página
+                function boxTop(idBox) {
+                    var boxOffset = $(idBox).offset().top;
+                    return boxOffset;
+                }
+    
+                // Verifica se o documento está pronto
+                $(document).ready(function() {
+                    
+                            // target define os elementos que serão animados. Neste 	caso todos os que possuirem a classe .anime	
+                    var $target = $('.anime-right'),
+                            
+                            // animationClass define a classe que será injetada no elemento durante o scroll. É nessa classe que	definimos como a animação irá ocorrer
+                            animationClass = 'anime-init-right',
+                            
+                            // windowHeight pega a altura total da janela do browser
+                            windowHeight = $(window).height(),
+                            
+                            // offset é definido a partir da altura da janela, menos um quarto dessa atlura. Isso vai garantir que o browser não fique com um espaço grande em branco
+                            offset = windowHeight - (windowHeight / 7);
+    
+                    // animeScroll é a função responsável por adicionar a classe animationClass ao elemento da página.
+                    function animeScroll() {
+                        
+                        // documentTop vai definir a distância entre o topo da página e o scroll. O valor é atualizado sempre a função animeScroll é ativada.
+                        var documentTop = $(document).scrollTop();
+                        
+                        // target.each serve para adicionarmos a função a cada elemento que tiver a classe do target. Assim garantimos que elementos com distâncias diferentes do topo da página, animem no momento correto
+                        $target.each(function() {
+                            
+                            // o if verifica se a distância entre o topo da página e o scroll é maior que a distância do elemento - o valor fo offset
+                            if (documentTop > boxTop(this) - offset) {
+                                
+                                // caso seja verdadeiro, ele vai adicionar a classe que está em animationClass ao elemento
+                                $(this).addClass(animationClass);
+                            } else {
+                                
+                                // caso seja falso ele vai remover a classe do elemento. Se você não quiser que a animação ocorra mais de uma vez, ou seja, quando o cliente voltar o scroll para cima os elementos continuem fixos, basta remover este else
+                                $(this).removeClass(animationClass);
+                            }
+                        });
+                    }
+                    
+                    // dispara a função animeScroll, nesse primeiro momento ele dispara para verificar se já não existe nenhum elemento na página que esteja no campo de visão do usuário
+                    animeScroll();
+                    
+                    // com o document.scroll vamos verificar sempre que um evento de scroll ocorrer na página
+                    $(document).scroll(function() {
+                        
+                        // quando o evento de scroll ocorre disparamos novamente a função animeScroll. Com um setTimeout para evetira que ela seja disparada diversas vezes
+                        setTimeout(function() {
+                            animeScroll()
+                        }, 150);
+                    });
+                });
+        </script>
         <script src="./Componentes/Home/tabVetores.js" type="text/javascript"></script>
         <script src="./Componentes/Home/tab.js" type="text/javascript"></script>
         <script src="./Componentes/Home/index.js" type="module"></script>
