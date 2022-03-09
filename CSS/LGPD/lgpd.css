@@ -13,9 +13,6 @@
 
         overflow-y: visible;
     }
-    #rodape{
-        display: none
-    }
     /*-----------------------DADOS-LGPD--------------------*/
     .secao__dados___lgpd{
         display: flex;
