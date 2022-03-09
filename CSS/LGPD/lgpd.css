@@ -1,0 +1,256 @@
+@media (min-width:0px){
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .form__lgpd{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100vw;
+
+        overflow-y: visible;
+    }
+    #rodape{
+        display: none
+    }
+    /*-----------------------DADOS-LGPD--------------------*/
+    .secao__dados___lgpd{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5.188rem;
+
+        width: 50vw;
+        height: 115vh;
+
+        padding-top: 6rem;
+    }
+    .container__cabecalho___dados{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        width: 33vw;
+    }
+    .titulo__cabecalho___dados{
+        font-family: 'Graphik-SemiBold';
+        font-size: 40px;
+
+        color: #292A2C;
+
+        margin: 0%;
+    }
+    .descricao__cabecalho___dados{
+        font-family: var(--inter);
+        font-weight: var(--medium);
+        font-size: 16px;
+
+        color: var(--low-light);
+
+        margin: 0%;
+    }
+    .secao__form___dados{
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+
+        width: 33vw;
+    }
+    .titulo__form___dados{
+        font-family: var(--inter);
+        font-weight: var(--bold);
+        font-size: 21.8px;
+
+        color: #000000;
+
+        margin: 0%;
+    }
+    .secao__inputs___form{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .container__input___form{
+        display: flex;
+        flex-direction: column;
+    }
+    .label__input___form{
+        font-family: 'Graphik-Regular';
+        font-size: 12px;
+
+        color: var(--low-light);
+
+        margin: 0%;
+
+        position: relative;
+        top: 2rem;
+        left: 1rem;
+
+        width: 7rem;
+
+        user-select: none;
+
+        z-index: 1;
+
+        transition: all .2s ease-in-out;
+
+        visibility: visible;
+    }
+    .input__form{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        border: 1px solid #828282;
+        border-radius: 8px;
+
+        width: 33vw;
+        height: 3.063rem;
+
+        font-family: 'Graphik-Regular';
+        font-size: 14px;
+
+        color: #000000;
+
+        background-color: transparent;
+
+        z-index: 200;
+
+        transition: all .2s ease-in-out;
+    }
+    .input__form:focus{
+        outline: 1px solid var(--primary-dark);
+
+        padding-top: 2.625rem;
+
+        height: 4.688rem;
+
+        transition: all .2s ease-in-out;
+    }
+    .text__area___form{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        border: 1px solid #828282;
+        border-radius: 8px;
+
+        width: 33vw;
+        height: 11.563rem;
+
+        font-family: 'Graphik-Regular';
+        font-size: 14px;
+
+        color: #000000;
+
+        resize: none;
+
+        transition: all .2s ease-in-out;
+    }
+    .text__area___form:focus{
+        outline: 1px solid var(--primary-dark);
+
+        padding-top: 2.625rem;
+
+        height: 12.863rem;
+        transition: all .2s ease-in-out;
+    }
+    /*-----------------------MOTIVACAO--------------------*/
+    .secao__motivacao___lgpd{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 50vw;
+        height: 115vh;
+
+        padding-top: 15.688rem;
+        padding-bottom: 7.625rem;
+
+        background-color: var(--primary-dark);
+    }
+    .secao__conteudo___motivacao{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.125rem;
+    }
+    .titulo__motivacao___lgpd{
+        font-family: var(--inter);
+        font-weight: var(--bold);
+        font-size: 21.8px;
+
+        color: #FFFFFF;
+
+        margin: 0%;
+        margin-bottom: 2.375rem;
+    }
+    .container__input___radio{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    .container__input___opcoes{
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+    .input__motivacao___form{
+        all: unset;
+        margin-top: .2rem;
+
+        width: 1.5rem;
+        height: 1.5rem;
+
+        background-color: transparent;
+        border-radius: 50%;
+
+        border: 2px solid #FFFFFF;
+
+        display: inline-block;
+
+        cursor: pointer;
+    }
+    .input__motivacao___form:checked{
+        background-color: transparent;
+
+        border: 2px solid #FFFFFF;
+
+        background-image: url("../../Assets/Vetores/vetoro-botao-check.svg");
+        background-size: 1rem 1rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .label__input___radio{
+        font-family: var(--inter);
+        font-weight: var(--regular);
+        font-size: 16px;
+
+        color: #FFFFFF;
+    }
+    .botao__enviar___lgpd{
+        width: 33vw;
+
+        border: none;
+        background-color: #FFFFFF;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        text-align: center;
+
+        border-radius: 8px;
+
+        font-family: var(--inter);
+        font-weight: var(--semi-bold);
+        font-size: 16px;
+
+        color: var(--primary-dark);
+
+        margin-top: 1.875rem;
+    }
+}

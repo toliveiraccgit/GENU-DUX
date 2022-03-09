@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./CSS/LGPD/lgpd.css">
+        <link rel="stylesheet" href="./CSS/animacaoScroll.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/cabecalho.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/rodape.css">
+        <style type="text/css" media="screen, print">
+            @font-face {
+            font-family: 'Graphik-Black';
+            font-style: normal;
+            font-weight: normal;
+            src: url('./Font/GraphikBlack.otf');
+            }
+
+            @font-face {
+            font-family: 'Graphik-Bold';
+            font-style: normal;
+            font-weight: normal;
+            src: url('./Font/GraphikBold.otf');
+            }
+
+            @font-face {
+            font-family: 'Graphik-Light';
+            font-style: normal;
+            font-weight: normal;
+            src: url('./Font/GraphikLight.otf');
+            }
+
+            @font-face {
+            font-family: 'Graphik-Medium';
+            font-style: normal;
+            font-weight: normal;
+            src: url('./Font/GraphikMedium.otf');
+            }
+
+            @font-face {
+            font-family: 'Graphik-Regular';
+            font-style: normal;
+            font-weight: normal;
+            src: url('./Font/GraphikRegular.otf');
+            }
+
+            @font-face {
+            font-family: 'Graphik-SemiBold';
+            font-style: normal;
+            font-weight: normal;
+            src: url('./Font/GraphikSemibold.otf');
+            }
+
+            @font-face {
+            font-family: 'Graphik-Super';
+            font-style: normal;
+            font-weight: normal;
+            src: url('./Font/GraphikSuper.otf');
+            }
+
+            @font-face {
+            font-family: 'Graphik-Thin';
+            font-style: normal;
+            font-weight: normal;
+            src: url('./Font/GraphikThin.otf');
+            }
+            
+            
+        </style>
+        <link href="./CSS/base.css" rel="stylesheet">
+        <link href="./CSS/reset.css" rel="stylesheet">
+        <link href="./CSS/normalize.css" rel="stylesheet">
+        <title>LGPD | GENU</title>
+        <link rel="shortcut icon" href="./Assets/Vetores/ICO-FAVICON-GENU.svg" type="image/x-icon"/>
+    </head>
+
+    <body id="body">
+        
+        <header class="cabecalho">
+
+            <section class="navegacao__cabecalho">
+                <a href="./index.html">
+                    <img src="./Assets/Vetores/Logo-Genu.svg" alt="GENU" class="logo__genu">
+                </a>
+                <section class="secao__navegacao">
+                    <div class="container__dropdown">
+                        <div class="container__botao___dropdown">
+                            <button class="item__navegacao botao__produtos">Produtos</button>
+                            <svg class="seta__dropdown" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="seta__dropdown-color" d="M1 6L6 1L11 6" stroke="#A3A3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+
+                        <div class="container__conteudo___dropdown">
+
+                            <ul class="lista__navegacao___dropdown">
+
+                                <li class="item__lista___dropdown item__saude-ocupacional">
+                                    <svg class="vetor__saude-ocupacional" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="vetor__saude-ocupacional" d="M17.4994 8.67499H15.416C15.3058 8.67545 15.1967 8.69778 15.0951 8.7407C14.9936 8.78361 14.9015 8.84625 14.8244 8.92499L13.791 9.99999L11.4577 7.34166C11.3797 7.2584 11.2855 7.19203 11.1809 7.14665C11.0763 7.10128 10.9634 7.07787 10.8494 7.07787C10.7353 7.07787 10.6225 7.10128 10.5178 7.14665C10.4132 7.19203 10.319 7.2584 10.241 7.34166L8.82436 8.75833H7.49936C7.27835 8.75833 7.06638 8.84612 6.9101 9.00241C6.75382 9.15869 6.66603 9.37065 6.66603 9.59166C6.66603 9.81267 6.75382 10.0246 6.9101 10.1809C7.06638 10.3372 7.27835 10.425 7.49936 10.425H9.16603C9.2757 10.4256 9.38442 10.4046 9.48595 10.3631C9.58748 10.3217 9.67983 10.2606 9.75769 10.1833L10.8327 9.06666L13.166 11.725C13.2413 11.8108 13.3334 11.8802 13.4366 11.929C13.5398 11.9777 13.6519 12.0047 13.766 12.0083C13.8757 12.009 13.9844 11.9879 14.0859 11.9465C14.1875 11.905 14.2798 11.8439 14.3577 11.7667L15.7744 10.3417H17.4994C17.7204 10.3417 17.9323 10.2539 18.0886 10.0976C18.2449 9.9413 18.3327 9.72934 18.3327 9.50833C18.3327 9.28731 18.2449 9.07535 18.0886 8.91907C17.9323 8.76279 17.7204 8.67499 17.4994 8.67499ZM11.341 13.0917L9.75769 14.675C9.68022 14.7531 9.58806 14.8151 9.48651 14.8574C9.38496 14.8997 9.27604 14.9215 9.16603 14.9215C9.05602 14.9215 8.94709 14.8997 8.84554 14.8574C8.744 14.8151 8.65183 14.7531 8.57436 14.675L4.23269 10.3333C3.94696 10.0478 3.72029 9.7087 3.56564 9.3355C3.411 8.96231 3.3314 8.5623 3.3314 8.15833C3.3314 7.75436 3.411 7.35435 3.56564 6.98115C3.72029 6.60796 3.94696 6.26889 4.23269 5.98333C4.80908 5.4088 5.58971 5.08619 6.40353 5.08619C7.21734 5.08619 7.99797 5.4088 8.57436 5.98333C8.65183 6.06143 8.744 6.12343 8.84554 6.16574C8.94709 6.20804 9.05602 6.22983 9.16603 6.22983C9.27604 6.22983 9.38496 6.20804 9.48651 6.16574C9.58806 6.12343 9.68022 6.06143 9.75769 5.98333C10.3432 5.42643 11.1204 5.11587 11.9285 5.11587C12.7366 5.11587 13.5138 5.42643 14.0994 5.98333C14.285 6.17145 14.4473 6.3813 14.5827 6.60833C14.704 6.77517 14.8829 6.89108 15.0848 6.93362C15.2867 6.97616 15.4971 6.94231 15.6755 6.83861C15.8538 6.73492 15.9874 6.56876 16.0503 6.37229C16.1132 6.17581 16.101 5.96299 16.016 5.77499C15.8101 5.43295 15.5639 5.11681 15.2827 4.83333C14.4919 4.0332 13.4419 3.54091 12.321 3.44471C11.2001 3.3485 10.0816 3.65467 9.16603 4.30833C8.45841 3.79857 7.62371 3.49422 6.75406 3.42887C5.8844 3.36351 5.0136 3.5397 4.23774 3.93797C3.46189 4.33624 2.81114 4.94112 2.35733 5.68585C1.90352 6.43059 1.66429 7.28622 1.66603 8.15833C1.66578 8.7784 1.78866 9.39235 2.02756 9.96456C2.26646 10.5368 2.61661 11.0558 3.05769 11.4917L7.39936 15.8333C7.86811 16.3015 8.50352 16.5645 9.16603 16.5645C9.82853 16.5645 10.4639 16.3015 10.9327 15.8333L12.4994 14.2667C12.6546 14.1105 12.7417 13.8993 12.7417 13.6792C12.7417 13.459 12.6546 13.2478 12.4994 13.0917C12.344 12.9415 12.1363 12.8575 11.9202 12.8575C11.7041 12.8575 11.4964 12.9415 11.341 13.0917Z" fill="#A3A3A3"/>
+                                    </svg>
+                                    <a class="item__lista___dropdown item__saude-ocupacional" href="./Produtos/saude-ocupacional.html">Saúde Ocupacional</a>
+                                </li>
+
+                                <li class="item__lista___dropdown item__seguranca-trabalho" >
+                                    <svg class="vetor__seguranca-trabalho" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="vetor__seguranca-trabalho" d="M16.6658 8.05833V7.91666C16.6709 6.49911 16.2211 5.11732 15.3826 3.97434C14.5441 2.83136 13.3612 1.98746 12.0075 1.56666H11.9575C11.2584 1.35352 10.5299 1.25227 9.79916 1.26666C8.05902 1.36216 6.42091 2.11812 5.21916 3.38027C4.01741 4.64241 3.34261 6.3156 3.33249 8.05833C2.84417 8.23011 2.42121 8.54925 2.12201 8.97168C1.8228 9.39411 1.66211 9.899 1.66211 10.4167C1.66211 10.9343 1.8228 11.4392 2.12201 11.8616C2.42121 12.2841 2.84417 12.6032 3.33249 12.775C3.50413 14.4206 4.28159 15.9437 5.51372 17.048C6.74585 18.1523 8.34461 18.7589 9.99916 18.75H10.1908C11.7908 18.6726 13.3116 18.0307 14.4832 16.9384C15.6549 15.8461 16.4016 14.374 16.5908 12.7833C17.0849 12.6213 17.5161 12.3092 17.8245 11.8905C18.1329 11.4718 18.303 10.9675 18.3113 10.4475C18.3196 9.92764 18.1655 9.41809 17.8706 8.98985C17.5756 8.56162 17.1545 8.236 16.6658 8.05833ZM10.1492 17.0833C8.94282 17.1182 7.76457 16.7156 6.83183 15.9498C5.89908 15.184 5.27479 14.1067 5.07416 12.9167H14.8825C14.6791 14.0432 14.1008 15.068 13.2415 15.8244C12.3822 16.5808 11.2924 17.0245 10.1492 17.0833ZM15.8325 11.25H4.16583C3.94481 11.25 3.73285 11.1622 3.57657 11.0059C3.42029 10.8496 3.33249 10.6377 3.33249 10.4167C3.33249 10.1956 3.42029 9.98369 3.57657 9.82741C3.73285 9.67113 3.94481 9.58333 4.16583 9.58333H5.83249C6.05351 9.58333 6.26547 9.49553 6.42175 9.33925C6.57803 9.18297 6.66583 8.97101 6.66583 8.75C6.66583 8.52898 6.57803 8.31702 6.42175 8.16074C6.26547 8.00446 6.05351 7.91666 5.83249 7.91666H4.99916C5.03646 7.05217 5.28355 6.20974 5.71909 5.46205C6.15464 4.71437 6.76556 4.08388 7.49916 3.625V6.25C7.49916 6.47101 7.58696 6.68297 7.74324 6.83925C7.89952 6.99553 8.11148 7.08333 8.33249 7.08333C8.55351 7.08333 8.76547 6.99553 8.92175 6.83925C9.07803 6.68297 9.16583 6.47101 9.16583 6.25V2.99166C9.39202 2.95387 9.62016 2.92883 9.84916 2.91666H9.99916C10.2784 2.9206 10.557 2.94567 10.8325 2.99166V6.25C10.8325 6.47101 10.9203 6.68297 11.0766 6.83925C11.2329 6.99553 11.4448 7.08333 11.6658 7.08333C11.8868 7.08333 12.0988 6.99553 12.2551 6.83925C12.4114 6.68297 12.4992 6.47101 12.4992 6.25V3.6C12.8527 3.80468 13.1824 4.04783 13.4825 4.325C13.963 4.79158 14.3448 5.34993 14.6053 5.96691C14.8659 6.58389 14.9998 7.24693 14.9992 7.91666H14.1658C13.9448 7.91666 13.7329 8.00446 13.5766 8.16074C13.4203 8.31702 13.3325 8.52898 13.3325 8.75C13.3325 8.97101 13.4203 9.18297 13.5766 9.33925C13.7329 9.49553 13.9448 9.58333 14.1658 9.58333H15.8325C16.0535 9.58333 16.2655 9.67113 16.4217 9.82741C16.578 9.98369 16.6658 10.1956 16.6658 10.4167C16.6658 10.6377 16.578 10.8496 16.4217 11.0059C16.2655 11.1622 16.0535 11.25 15.8325 11.25Z" fill="#A3A3A3"/>
+                                    </svg>
+                                    <a class="item__lista___dropdown item__seguranca-trabalho" href="./Produtos/seguranca-trabalho.html">Segurança do Trabalho</a>
+                                </li>
+
+                                <li class="item__lista___dropdown item__relatorios">
+                                    <svg class="vetor__relatorios" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="vetor__relatorios" d="M10.834 11.6667H7.50065C7.27964 11.6667 7.06768 11.7545 6.9114 11.9108C6.75511 12.067 6.66732 12.279 6.66732 12.5C6.66732 12.721 6.75511 12.933 6.9114 13.0893C7.06768 13.2455 7.27964 13.3333 7.50065 13.3333H10.834C11.055 13.3333 11.267 13.2455 11.4232 13.0893C11.5795 12.933 11.6673 12.721 11.6673 12.5C11.6673 12.279 11.5795 12.067 11.4232 11.9108C11.267 11.7545 11.055 11.6667 10.834 11.6667ZM14.1673 3.33334H13.184C13.0121 2.84705 12.6939 2.42584 12.2732 2.12745C11.8525 1.82907 11.3498 1.66812 10.834 1.66667H9.16732C8.65153 1.66812 8.14882 1.82907 7.7281 2.12745C7.30738 2.42584 6.98925 2.84705 6.81732 3.33334H5.83398C5.17094 3.33334 4.53506 3.59673 4.06622 4.06557C3.59738 4.53441 3.33398 5.1703 3.33398 5.83334V15.8333C3.33398 16.4964 3.59738 17.1323 4.06622 17.6011C4.53506 18.0699 5.17094 18.3333 5.83398 18.3333H14.1673C14.8304 18.3333 15.4662 18.0699 15.9351 17.6011C16.4039 17.1323 16.6673 16.4964 16.6673 15.8333V5.83334C16.6673 5.1703 16.4039 4.53441 15.9351 4.06557C15.4662 3.59673 14.8304 3.33334 14.1673 3.33334ZM8.33398 4.16667C8.33398 3.94566 8.42178 3.7337 8.57806 3.57742C8.73434 3.42114 8.9463 3.33334 9.16732 3.33334H10.834C11.055 3.33334 11.267 3.42114 11.4232 3.57742C11.5795 3.7337 11.6673 3.94566 11.6673 4.16667V5.00001H8.33398V4.16667ZM15.0007 15.8333C15.0007 16.0544 14.9129 16.2663 14.7566 16.4226C14.6003 16.5789 14.3883 16.6667 14.1673 16.6667H5.83398C5.61297 16.6667 5.40101 16.5789 5.24473 16.4226C5.08845 16.2663 5.00065 16.0544 5.00065 15.8333V5.83334C5.00065 5.61232 5.08845 5.40036 5.24473 5.24408C5.40101 5.0878 5.61297 5.00001 5.83398 5.00001H6.66732V5.83334C6.66732 6.05435 6.75511 6.26631 6.9114 6.42259C7.06768 6.57887 7.27964 6.66667 7.50065 6.66667H12.5007C12.7217 6.66667 12.9336 6.57887 13.0899 6.42259C13.2462 6.26631 13.334 6.05435 13.334 5.83334V5.00001H14.1673C14.3883 5.00001 14.6003 5.0878 14.7566 5.24408C14.9129 5.40036 15.0007 5.61232 15.0007 5.83334V15.8333ZM12.5007 8.33334H7.50065C7.27964 8.33334 7.06768 8.42114 6.9114 8.57742C6.75511 8.7337 6.66732 8.94566 6.66732 9.16667C6.66732 9.38769 6.75511 9.59965 6.9114 9.75593C7.06768 9.91221 7.27964 10 7.50065 10H12.5007C12.7217 10 12.9336 9.91221 13.0899 9.75593C13.2462 9.59965 13.334 9.38769 13.334 9.16667C13.334 8.94566 13.2462 8.7337 13.0899 8.57742C12.9336 8.42114 12.7217 8.33334 12.5007 8.33334Z" fill="#A3A3A3"/>
+                                    </svg>
+                                    <a class="item__lista___dropdown item__relatorios" href="./Produtos/gestão-relatorios.html">Relatórios</a>
+                                </li>
+
+                                <li class="item__lista___dropdown item__e-social">
+                                    <svg class="vetor__e-social" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="vetor__e-social" d="M10.0007 11.6667C9.77964 11.6667 9.56768 11.7545 9.4114 11.9108C9.25511 12.067 9.16732 12.279 9.16732 12.5V14.1667C9.16732 14.3877 9.25511 14.5996 9.4114 14.7559C9.56768 14.9122 9.77964 15 10.0007 15C10.2217 15 10.4336 14.9122 10.5899 14.7559C10.7462 14.5996 10.834 14.3877 10.834 14.1667V12.5C10.834 12.279 10.7462 12.067 10.5899 11.9108C10.4336 11.7545 10.2217 11.6667 10.0007 11.6667ZM10.3173 9.23334C10.1665 9.16339 9.99814 9.14018 9.83398 9.16667L9.68398 9.21667L9.53398 9.29167L9.40898 9.39167C9.32973 9.47151 9.26745 9.56657 9.22592 9.67112C9.18439 9.77567 9.16445 9.88754 9.16732 10C9.16668 10.1097 9.1877 10.2184 9.22917 10.3199C9.27065 10.4215 9.33175 10.5138 9.40898 10.5917C9.48824 10.6675 9.58169 10.727 9.68398 10.7667C9.78288 10.8133 9.89134 10.8362 10.0007 10.8333C10.1103 10.834 10.219 10.813 10.3206 10.7715C10.4221 10.73 10.5145 10.6689 10.5923 10.5917C10.6696 10.5138 10.7307 10.4215 10.7721 10.3199C10.8136 10.2184 10.8346 10.1097 10.834 10C10.8346 9.89033 10.8136 9.78161 10.7721 9.68008C10.7307 9.57855 10.6696 9.48621 10.5923 9.40834C10.5113 9.33473 10.4183 9.27554 10.3173 9.23334ZM16.6673 7.45001C16.6586 7.37345 16.6419 7.29803 16.6173 7.22501V7.15001C16.5772 7.06432 16.5238 6.98556 16.459 6.91667L11.459 1.91667C11.3901 1.85185 11.3113 1.79841 11.2257 1.75834H11.1423C11.0613 1.71501 10.9742 1.68411 10.884 1.66667H5.83398C5.17094 1.66667 4.53506 1.93006 4.06622 2.3989C3.59738 2.86775 3.33398 3.50363 3.33398 4.16667V15.8333C3.33398 16.4964 3.59738 17.1323 4.06622 17.6011C4.53506 18.0699 5.17094 18.3333 5.83398 18.3333H14.1673C14.8304 18.3333 15.4662 18.0699 15.9351 17.6011C16.4039 17.1323 16.6673 16.4964 16.6673 15.8333V7.50001C16.6673 7.50001 16.6673 7.50001 16.6673 7.45001ZM11.6673 4.50834L13.8257 6.66667H12.5007C12.2796 6.66667 12.0677 6.57887 11.9114 6.42259C11.7551 6.26631 11.6673 6.05435 11.6673 5.83334V4.50834ZM15.0007 15.8333C15.0007 16.0544 14.9129 16.2663 14.7566 16.4226C14.6003 16.5789 14.3883 16.6667 14.1673 16.6667H5.83398C5.61297 16.6667 5.40101 16.5789 5.24473 16.4226C5.08845 16.2663 5.00065 16.0544 5.00065 15.8333V4.16667C5.00065 3.94566 5.08845 3.7337 5.24473 3.57742C5.40101 3.42114 5.61297 3.33334 5.83398 3.33334H10.0007V5.83334C10.0007 6.49638 10.264 7.13227 10.7329 7.60111C11.2017 8.06995 11.8376 8.33334 12.5007 8.33334H15.0007V15.8333Z" fill="#A3A3A3"/>
+                                    </svg>
+                                    <a class="item__lista___dropdown item__e-social" href="./Produtos/e-social.html">e-Social</a>
+                                </li>
+
+                                <li class="item__lista___dropdown item__integracao-sap">
+                                    <svg class="vetor__integracao-sap" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="vetor__integracao-sap" d="M8.33398 10.8333C8.69186 11.3118 9.14845 11.7076 9.67278 11.9941C10.1971 12.2806 10.7769 12.4509 11.3729 12.4936C11.9688 12.5363 12.567 12.4503 13.1268 12.2415C13.6866 12.0327 14.1949 11.7059 14.6173 11.2833L17.1173 8.78333C17.8763 7.99749 18.2963 6.94498 18.2868 5.85249C18.2773 4.76 17.8391 3.71495 17.0666 2.94242C16.294 2.16989 15.249 1.73168 14.1565 1.72219C13.064 1.71269 12.0115 2.13267 11.2257 2.89166L9.79232 4.31666" stroke="#A3A3A3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path class="vetor__integracao-sap" d="M11.6659 9.16667C11.308 8.68823 10.8514 8.29235 10.3271 8.00588C9.80274 7.71942 9.22293 7.54907 8.62698 7.50639C8.03103 7.46371 7.43287 7.54969 6.87307 7.75851C6.31327 7.96734 5.80493 8.29411 5.38252 8.71667L2.88252 11.2167C2.12353 12.0025 1.70355 13.055 1.71305 14.1475C1.72254 15.24 2.16075 16.285 2.93328 17.0576C3.70581 17.8301 4.75086 18.2683 5.84335 18.2778C6.93584 18.2873 7.98835 17.8673 8.77419 17.1083L10.1992 15.6833" stroke="#A3A3A3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <a class="item__lista___dropdown item__integracao-sap" href="./Produtos/integracao-sap.html">Integração SAP</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="item__navegacao">GENU clínicas</a>
+                    <a href="./LGPD.html" class="item__navegacao" id="destaque-paginacao">LGPD</a>
+
+                </section>
+            </section>
+
+            <section class="secao__login___cabecalho">
+
+                <a href="#" class="item__navegacao">Fale conosco</a>
+
+                <a href="#" class="botao__login">Login</a>
+
+            </section>
+
+            <section class="secao__navegacao___mobile">
+
+                <button class="botao__abre-menu"><img src="./Assets/Mobile/Vetores/vetor-abre-menu.svg" alt="Botão Abre Menu" class="imagem__abre-menu"></button>
+
+            </section>
+
+        </header>
+
+        <main class="conteudo">
+
+            <form class="form__lgpd">
+            
+                <section class="secao__dados___lgpd">
+
+                    <div class="container__cabecalho___dados">
+
+                        <h1 class="titulo__cabecalho___dados">Dúvidas ou solicitações?</h1>
+                        <p class="descricao__cabecalho___dados"><span class="destaque__green">Preencha</span> o formulário abaixo:</p>
+
+                    </div>
+
+                    <section class="secao__form___dados">
+
+                        <h2 class="titulo__form___dados">Proteção de dados</h2>
+
+                        <section class="secao__inputs___form">
+
+                            <div class="container__input___form">
+
+                                <label for="Nome" class="label__input___form" id="label-nome">Nome completo <span class="destaque__green">*</span></label>
+                                <input type="text" class="input__form" id="input-nome" required onblur="desativaLabel()" onfocus="ativaLabel()">
+
+                            </div>
+
+                            <div class="container__input___form">
+
+                                <label for="Nome" class="label__input___form" id="label-email">Seu email <span class="destaque__green">*</span></label>
+                                <input type="email" class="input__form" id="input-email" required onblur="desativaLabelEmail()" onfocus="ativaLabelEmail()">
+
+                            </div>
+
+                            <div class="container__input___form">
+
+                                <label for="Nome" class="label__input___form" id="label-cpf">CPF <span class="destaque__green">*</span></label>
+                                <input type="text" class="input__form" id="input-cpf" onblur="desativaLabelCpf()" onfocus="ativaLabelCpf()" required>
+
+                            </div>
+
+                            <div class="container__input___form">
+
+                                <label for="Nome" class="label__input___form" id="label-telefone">Telefone <span class="destaque__green">*</span></label>
+                                <input type="tel" class="input__form" id="input-telefone"  onblur="desativaLabelTelefone()" onfocus="ativaLabelTelefone()" required>
+
+                            </div>
+
+                            <div class="container__input___form">
+
+                                <label for="Nome" class="label__input___form" id="label-mensagem">Mensagem <span class="destaque__green">*</span></label>
+                                <textarea class="text__area___form" name="Mensagem" id="input-mensagem" cols="auto" rows="auto" required onblur="desativaLabelMensagem()" onfocus="ativaLabelMensagem()"></textarea>
+
+                            </div>
+                            
+
+                        </section>
+
+                    </section>
+                </section>
+
+                <section class="secao__motivacao___lgpd">
+
+                    <section class="secao__conteudo___motivacao">
+                        <h4 class="titulo__motivacao___lgpd">Motivação</h4>
+
+
+                        <div class="container__input___radio">
+
+                            <div class="container__input__radio-button">
+                                <div class="container__input___opcao">
+                                    <input name="Motivação" type="radio" class="input__motivacao___form">
+                                </div>
+                            </div>
+
+                            <label for="Motivação" class="label__input___radio">Acesso</label>
+
+                        </div>
+
+                        <div class="container__input___radio">
+
+                            <div class="container__input__radio-button">
+                                <div class="container__input___opcao">
+                                    <input name="Motivação" type="radio" class="input__motivacao___form">
+                                </div>
+                            </div>
+
+                            <label for="Motivação" class="label__input___radio">Correção aos dados</label>
+
+                        </div>
+
+                        <div class="container__input___radio">
+
+                            <div class="container__input__radio-button">
+                                <div class="container__input___opcao">
+                                    <input name="Motivação" type="radio" class="input__motivacao___form">
+                                </div>
+                            </div>
+
+                            <label for="Motivação" class="label__input___radio">Anonimização ou bloqueio dos dados desnecessários</label>
+
+                        </div>
+
+                        <div class="container__input___radio">
+
+                            <div class="container__input__radio-button">
+                                <div class="container__input___opcao">
+                                    <input name="Motivação" type="radio" class="input__motivacao___form">
+                                </div>
+                            </div>
+
+                            <label for="Motivação" class="label__input___radio">Confirmação de existência de tratamento</label>
+
+                        </div>
+
+                        <div class="container__input___radio">
+
+                            <div class="container__input__radio-button">
+                                <div class="container__input___opcao">
+                                    <input name="Motivação" type="radio" class="input__motivacao___form">
+                                </div>
+                            </div>
+
+                            <label for="Motivação" class="label__input___radio">Eliminação dos dados</label>
+
+                        </div>
+
+                        <div class="container__input___radio">
+
+                            <div class="container__input__radio-button">
+                                <div class="container__input___opcao">
+                                    <input name="Motivação" type="radio" class="input__motivacao___form">
+                                </div>
+                            </div>
+
+                            <label for="Motivação" class="label__input___radio">Informação das entidades que o controlador compartilhou</label>
+
+                        </div>
+
+                        <div class="container__input___radio">
+
+                            <div class="container__input__radio-button">
+                                <div class="container__input___opcao">
+                                    <input name="Motivação" type="radio" class="input__motivacao___form">
+                                </div>
+                            </div>
+
+                            <label for="Motivação" class="label__input___radio">Informação sobre não fornecer consentimento</label>
+
+                        </div>
+
+                        <div class="container__input___radio">
+
+                            <div class="container__input__radio-button">
+                                <div class="container__input___opcao">
+                                    <input name="Motivação" type="radio" class="input__motivacao___form">
+                                </div>
+                            </div>
+
+                            <label for="Motivação" class="label__input___radio">Oposição ao tratamento, se irregular</label>
+
+                        </div>
+
+                        <div class="container__input___radio">
+
+                            <div class="container__input__radio-button">
+                                <div class="container__input___opcao">
+                                    <input name="Motivação" type="radio" class="input__motivacao___form">
+                                </div>
+                            </div>
+
+                            <label for="Motivação" class="label__input___radio">Portabilidade dos dados a outro fornecedor</label>
+
+                        </div>
+
+                        <div class="container__input___radio">
+
+                            <div class="container__input__radio-button">
+                                <div class="container__input___opcao">
+                                    <input name="Motivação" type="radio" class="input__motivacao___form">
+                                </div>
+                            </div>
+
+                            <label for="Motivação" class="label__input___radio">Revogação do consentimento</label>
+
+                        </div>
+
+                        <button type="submit" class="botao__enviar___lgpd">Enviar</button>
+                    </section>
+                </section>
+
+            </form>
+
+        </main>
+
+        <footer class="rodape" id="rodape">
+
+            <section class="secao__adress anime-right">
+
+                <img src="./Assets/Vetores/Logo-Genu.svg" alt="GENU" class="logo__genu">
+
+                <section class="secao__redes-sociais">
+
+                    <a href="#" class="link__rede-social"><img src="./Assets/Vetores/LogoRedesSociais/logo-youtube.svg" alt="Youtube"></a>
+
+                    <a href="#" class="link__rede-social"><img src="./Assets/Vetores/LogoRedesSociais/logo-linkedin.svg" alt="LinkedIn"></a>
+
+                    <a href="#" class="link__rede-social"><img src="./Assets/Vetores/LogoRedesSociais/logo-instagram.svg" alt="Instagram"></a>
+
+                    <a href="#" class="link__rede-social"><img src="./Assets/Vetores/LogoRedesSociais/logo-facebook.svg" alt="Facebook"></a>
+
+                </section>
+
+                <section class="secao__copyright">
+
+                    <span class="texto__copyright">2022 <span class="destaque__genu">GENU</span> por <a href="#" class="destaque__green">Dux Inovation</a></span>
+
+                    <div class="container__termos">
+
+                        <a href="#" class="link__termo-privacidade">Termos de uso |</a>
+
+                        <a href="#" class="link__termo-privacidade">Política de privacidade</a>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+            <section class="secao__navegacao___footer anime-left">
+
+                <div class="container__lista___navegacao">
+                    <h12 class="titulo__lista___navegacao">Sobre nós</h12>
+                     <ul class="lista__navegacao___footer">
+
+                        <li class="item__lista___footer"><a href="#" class="item__lista___footer">Sobre o GENU</a></li>
+
+                        <li class="item__lista___footer"><a href="#" class="item__lista___footer">Sobre o GENU SST</a></li>
+
+                        <li class="item__lista___footer"><a href="./LGPD.html" class="item__lista___footer">LGPD</a></li>
+
+                        <li class="item__lista___footer"><a href="#" class="item__lista___footer">Política de privacidade</a></li>
+
+                        <li class="item__lista___footer"><a href="#" class="item__lista___footer">Termos de uso</a></li>
+
+                     </ul>
+
+                </div>
+
+                <div class="container__lista___navegacao">
+                    <h12 class="titulo__lista___navegacao">Suporte</h12>
+                     <ul class="lista__navegacao___footer">
+
+                        <li class="item__lista___footer"><a href="#" class="item__lista___footer">FAQ</a></li>
+
+                        <li class="item__lista___footer"><a href="#" class="item__lista___footer">Tutoriais</a></li>
+
+                        <li class="item__lista___footer"><a href="#" class="item__lista___footer">Ajuda</a></li>
+
+                     </ul>
+
+                </div>
+
+                <div class="container__lista___navegacao">
+                    <h12 class="titulo__lista___navegacao">Contato</h12>
+                     <ul class="lista__navegacao___footer">
+
+                        <li class="item__lista___footer item__lista___email">
+                            
+                            <svg class="vetor-email" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="vetor-email" d="M3.33268 3.33325H16.666C17.5827 3.33325 18.3327 4.08325 18.3327 4.99992V14.9999C18.3327 15.9166 17.5827 16.6666 16.666 16.6666H3.33268C2.41602 16.6666 1.66602 15.9166 1.66602 14.9999V4.99992C1.66602 4.08325 2.41602 3.33325 3.33268 3.33325Z" stroke="#666666" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path class="vetor-email" d="M18.3327 5L9.99935 10.8333L1.66602 5" stroke="#666666" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                            <a href="#" class="item__lista___footer" >genuatendimento@dux.com</a></li>
+                            
+                        <li class="item__lista___footer item__lista___whataspp">
+
+                            <svg  class="vetor-whatsapp" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="vetor-whatsapp" d="M14.5152 11.9842C14.2681 11.8601 13.0499 11.26 12.8228 11.178C12.5958 11.095 12.4307 11.054 12.2657 11.302C12.1006 11.5491 11.6255 12.1082 11.4805 12.2732C11.3365 12.4383 11.1915 12.4583 10.9444 12.3342C10.2143 12.0436 9.54041 11.6279 8.95296 11.106C8.41116 10.6052 7.94667 10.0267 7.57466 9.38959C7.43063 9.14154 7.55966 9.00751 7.68368 8.88448C7.79471 8.77345 7.93174 8.59542 8.05476 8.45038C8.15666 8.32518 8.24018 8.18608 8.30282 8.03729C8.33578 7.96892 8.35112 7.89339 8.34745 7.81758C8.34378 7.74176 8.32122 7.66807 8.28181 7.6032C8.2198 7.47917 7.72469 6.2599 7.51865 5.76379C7.3176 5.28169 7.11356 5.3467 6.96052 5.3387C6.81649 5.3317 6.65146 5.3297 6.48642 5.3297C6.36088 5.3332 6.23742 5.36264 6.12381 5.41618C6.0102 5.46971 5.9089 5.54618 5.82628 5.64077C5.54624 5.90596 5.32451 6.22658 5.1752 6.58218C5.0259 6.93779 4.9523 7.3206 4.95909 7.70622C5.0394 8.64066 5.39086 9.53131 5.97031 10.2688C7.03246 11.8612 8.49049 13.15 10.2012 14.0086C10.6627 14.2068 11.1341 14.3811 11.6135 14.5307C12.119 14.6842 12.6533 14.7174 13.1739 14.6277C13.5187 14.5579 13.8452 14.4173 14.1329 14.2148C14.4206 14.0124 14.6631 13.7524 14.8453 13.4515C15.0077 13.0813 15.0578 12.6716 14.9893 12.2732C14.9283 12.1692 14.7632 12.1082 14.5152 11.9842ZM17.0077 2.90317C15.3073 1.20315 13.047 0.178982 10.6477 0.0213432C8.24843 -0.136296 5.87359 0.583335 3.96535 2.04626C2.05712 3.50918 0.745521 5.61571 0.274754 7.97365C-0.196014 10.3316 0.206127 12.7803 1.40631 14.8638L0 19.9999L5.25515 18.6226C6.70863 19.414 8.33721 19.8287 9.99219 19.8289H9.99619C11.9567 19.8279 13.873 19.2458 15.5028 18.1562C17.1327 17.0666 18.403 15.5184 19.1533 13.7071C19.9037 11.8959 20.1003 9.90283 19.7184 7.97986C19.3365 6.05689 18.3932 4.29026 17.0077 2.90316V2.90317ZM14.3741 16.8952C13.062 17.7177 11.5448 18.1541 9.99619 18.1545H9.99219C8.51677 18.1544 7.06853 17.7575 5.79927 17.0052L5.4982 16.8272L2.37952 17.6454L3.2117 14.6047L3.01666 14.2927C2.15102 12.9122 1.71416 11.306 1.76132 9.6773C1.80849 8.04856 2.33756 6.47039 3.28164 5.14233C4.22572 3.81428 5.5424 2.79599 7.06519 2.21623C8.58799 1.63648 10.2485 1.52129 11.8368 1.88524C13.425 2.24919 14.8697 3.07593 15.9881 4.26091C17.1065 5.4459 17.8484 6.93591 18.12 8.54254C18.3916 10.1492 18.1807 11.8003 17.5139 13.287C16.8472 14.7738 15.7545 16.0294 14.3741 16.8952Z" fill="#666666"/>
+                            </svg>
+
+                            <a href="#" class="item__lista___footer">(11) 99672-6923</a>
+                        </li>
+
+                     </ul>
+
+                </div>
+
+            </section>
+
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" type="text/javascript"></script>
+        <script>
+                // Adiciona a classe .js ao elemento HTML. Assim eu garanto que os elementos só serão escondidos caso o JavaScript esteja habilitado
+                    var root = document.documentElement;
+                    root.className += ' js';
+
+                    // Cria a função boxTop responsável por definir a distância entre o topo to elemento e a página
+                    function boxTop(idBox) {
+                        var boxOffset = $(idBox).offset().top;
+                        return boxOffset;
+                    }
+
+                    // Verifica se o documento está pronto
+                    $(document).ready(function() {
+                        
+                                // target define os elementos que serão animados. Neste 	caso todos os que possuirem a classe .anime	
+                        var $target = $('.anime-left'),
+                                
+                                // animationClass define a classe que será injetada no elemento durante o scroll. É nessa classe que	definimos como a animação irá ocorrer
+                                animationClass = 'anime-init-left',
+                                
+                                // windowHeight pega a altura total da janela do browser
+                                windowHeight = $(window).height(),
+                                
+                                // offset é definido a partir da altura da janela, menos um quarto dessa atlura. Isso vai garantir que o browser não fique com um espaço grande em branco
+                                offset = windowHeight - (windowHeight / 7);
+
+                        // animeScroll é a função responsável por adicionar a classe animationClass ao elemento da página.
+                        function animeScroll() {
+                            
+                            // documentTop vai definir a distância entre o topo da página e o scroll. O valor é atualizado sempre a função animeScroll é ativada.
+                            var documentTop = $(document).scrollTop();
+                            
+                            // target.each serve para adicionarmos a função a cada elemento que tiver a classe do target. Assim garantimos que elementos com distâncias diferentes do topo da página, animem no momento correto
+                            $target.each(function() {
+                                
+                                // o if verifica se a distância entre o topo da página e o scroll é maior que a distância do elemento - o valor fo offset
+                                if (documentTop > boxTop(this) - offset) {
+                                    
+                                    // caso seja verdadeiro, ele vai adicionar a classe que está em animationClass ao elemento
+                                    $(this).addClass(animationClass);
+                                } else {
+                                    
+                                    // caso seja falso ele vai remover a classe do elemento. Se você não quiser que a animação ocorra mais de uma vez, ou seja, quando o cliente voltar o scroll para cima os elementos continuem fixos, basta remover este else
+                                    $(this).removeClass(animationClass);
+                                }
+                            });
+                        }
+                        
+                        // dispara a função animeScroll, nesse primeiro momento ele dispara para verificar se já não existe nenhum elemento na página que esteja no campo de visão do usuário
+                        animeScroll();
+                        
+                        // com o document.scroll vamos verificar sempre que um evento de scroll ocorrer na página
+                        $(document).scroll(function() {
+                            
+                            // quando o evento de scroll ocorre disparamos novamente a função animeScroll. Com um setTimeout para evetira que ela seja disparada diversas vezes
+                            setTimeout(function() {
+                                animeScroll()
+                            }, 150);
+                        });
+                    });
+        </script>
+        <script>
+            // Adiciona a classe .js ao elemento HTML. Assim eu garanto que os elementos só serão escondidos caso o JavaScript esteja habilitado
+                var root = document.documentElement;
+                root.className += ' js';
+    
+                // Cria a função boxTop responsável por definir a distância entre o topo to elemento e a página
+                function boxTop(idBox) {
+                    var boxOffset = $(idBox).offset().top;
+                    return boxOffset;
+                }
+    
+                // Verifica se o documento está pronto
+                $(document).ready(function() {
+                    
+                            // target define os elementos que serão animados. Neste 	caso todos os que possuirem a classe .anime	
+                    var $target = $('.anime-right'),
+                            
+                            // animationClass define a classe que será injetada no elemento durante o scroll. É nessa classe que	definimos como a animação irá ocorrer
+                            animationClass = 'anime-init-right',
+                            
+                            // windowHeight pega a altura total da janela do browser
+                            windowHeight = $(window).height(),
+                            
+                            // offset é definido a partir da altura da janela, menos um quarto dessa atlura. Isso vai garantir que o browser não fique com um espaço grande em branco
+                            offset = windowHeight - (windowHeight / 7);
+    
+                    // animeScroll é a função responsável por adicionar a classe animationClass ao elemento da página.
+                    function animeScroll() {
+                        
+                        // documentTop vai definir a distância entre o topo da página e o scroll. O valor é atualizado sempre a função animeScroll é ativada.
+                        var documentTop = $(document).scrollTop();
+                        
+                        // target.each serve para adicionarmos a função a cada elemento que tiver a classe do target. Assim garantimos que elementos com distâncias diferentes do topo da página, animem no momento correto
+                        $target.each(function() {
+                            
+                            // o if verifica se a distância entre o topo da página e o scroll é maior que a distância do elemento - o valor fo offset
+                            if (documentTop > boxTop(this) - offset) {
+                                
+                                // caso seja verdadeiro, ele vai adicionar a classe que está em animationClass ao elemento
+                                $(this).addClass(animationClass);
+                            } else {
+                                
+                                // caso seja falso ele vai remover a classe do elemento. Se você não quiser que a animação ocorra mais de uma vez, ou seja, quando o cliente voltar o scroll para cima os elementos continuem fixos, basta remover este else
+                                $(this).removeClass(animationClass);
+                            }
+                        });
+                    }
+                    
+                    // dispara a função animeScroll, nesse primeiro momento ele dispara para verificar se já não existe nenhum elemento na página que esteja no campo de visão do usuário
+                    animeScroll();
+                    
+                    // com o document.scroll vamos verificar sempre que um evento de scroll ocorrer na página
+                    $(document).scroll(function() {
+                        
+                        // quando o evento de scroll ocorre disparamos novamente a função animeScroll. Com um setTimeout para evetira que ela seja disparada diversas vezes
+                        setTimeout(function() {
+                            animeScroll()
+                        }, 150);
+                    });
+                });
+        </script>
+        <script src="./Componentes/Home/tabVetores.js" type="text/javascript"></script>
+        <script src="./Componentes/LGPD/lgpd.js" type="text/javascript"></script>
+    </body>
+
+</html>

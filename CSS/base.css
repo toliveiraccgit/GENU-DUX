@@ -70,3 +70,6 @@ html{
 .destaque__green{
     color: #00BD62;
 }
+#destaque-paginacao{
+    color: var(--primary-dark);
+}
