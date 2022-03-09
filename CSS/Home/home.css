@@ -18,6 +18,12 @@
             padding-top: 6rem;
             
         }
+        @media (min-width:1981px){
+            .secao__banner{
+                justify-content: center;
+                gap: 25rem;
+            }
+        }
         .secao__info___banner{
             display: flex;
             flex-direction: column;
