@@ -6,7 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="./CSS/LGPD/lgpd.css">
+        <link rel="stylesheet" href="./CSS/FaleConosco/faleConosco.css">
         <link rel="stylesheet" href="./CSS/animacaoScroll.css">
         <link rel="stylesheet" href="./CSS/ComponentesCSS/cabecalho.css">
         <link rel="stylesheet" href="./CSS/ComponentesCSS/rodape.css">
@@ -72,7 +72,7 @@
         <link href="./CSS/base.css" rel="stylesheet">
         <link href="./CSS/reset.css" rel="stylesheet">
         <link href="./CSS/normalize.css" rel="stylesheet">
-        <title>LGPD | GENU</title>
+        <title>Fale Conosco | GENU</title>
         <link rel="shortcut icon" href="./Assets/Vetores/ICO-FAVICON-GENU.svg" type="image/x-icon"/>
     </head>
 
@@ -140,14 +140,14 @@
                     </div>
 
                     <a href="#" class="item__navegacao">GENU clínicas</a>
-                    <a href="./LGPD.html" class="item__navegacao" id="destaque-paginacao">LGPD</a>
+                    <a href="./LGPD.html" class="item__navegacao">LGPD</a>
 
                 </section>
             </section>
 
             <section class="secao__login___cabecalho">
 
-                <a href="./fale-conosco.html" class="item__navegacao">Fale conosco</a>
+                <a href="./fale-conosco.html" class="item__navegacao"  id="destaque-paginacao">Fale conosco</a>
 
                 <a href="#" class="botao__login">Login</a>
 
@@ -163,20 +163,18 @@
 
         <main class="conteudo">
 
-            <form class="form__lgpd">
+            <section class="form__fale-conosco">
             
-                <section class="secao__dados___lgpd">
+                <form class="secao__dados">
 
                     <div class="container__cabecalho___dados">
 
-                        <h1 class="titulo__cabecalho___dados">Dúvidas ou solicitações?</h1>
-                        <p class="descricao__cabecalho___dados"><span class="destaque__green">Preencha</span> o formulário abaixo:</p>
+                        <h1 class="titulo__cabecalho___dados">Pronto pra <span class="destaque__green">mudar</span> sua empresa com o <span class="destaque__green">GENU</span>?</h1>
+                        <p class="descricao__cabecalho___dados">Preencha o formulário abaixo para entrarmos em contato com você e agendar uma <span class="destaque__green">apresentação.</span></p>
 
                     </div>
 
                     <section class="secao__form___dados">
-
-                        <h2 class="titulo__form___dados">Proteção de dados</h2>
 
                         <section class="secao__inputs___form">
 
@@ -196,20 +194,6 @@
 
                             <div class="container__input___form">
 
-                                <label for="Nome" class="label__input___form" id="label-cpf">CPF <span class="destaque__green">*</span></label>
-                                <input type="text" class="input__form" id="input-cpf" onblur="desativaLabelCpf()" onfocus="ativaLabelCpf()" required>
-
-                            </div>
-
-                            <div class="container__input___form">
-
-                                <label for="Nome" class="label__input___form" id="label-telefone">Telefone <span class="destaque__green">*</span></label>
-                                <input type="tel" class="input__form" id="input-telefone"  onblur="desativaLabelTelefone()" onfocus="ativaLabelTelefone()" required>
-
-                            </div>
-
-                            <div class="container__input___form">
-
                                 <label for="Nome" class="label__input___form" id="label-mensagem">Mensagem <span class="destaque__green">*</span></label>
                                 <textarea class="text__area___form" name="Mensagem" id="input-mensagem" cols="auto" rows="auto" required onblur="desativaLabelMensagem()" onfocus="ativaLabelMensagem()"></textarea>
 
@@ -218,140 +202,77 @@
 
                         </section>
 
+                        <button type="submit" class="botao__enviar___mensagem">Enviar</button>
+
                     </section>
+                </form>
+
+                <section class="secao__adress___fale-conosco">
+
+                    <a href="#" target="_blank" class="container__card___adress">
+
+                        <svg class="vetor__redes-sociais___fale-conosco vetor__whatsapp___fale-conosco" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="vetor__redes-sociais___fale-conosco vetor__whatsapp___fale-conosco" d="M14.5152 11.9842C14.2681 11.8601 13.0499 11.26 12.8228 11.178C12.5958 11.095 12.4307 11.054 12.2657 11.302C12.1006 11.5491 11.6255 12.1082 11.4805 12.2732C11.3365 12.4383 11.1915 12.4583 10.9444 12.3342C10.2143 12.0436 9.54041 11.6279 8.95296 11.106C8.41116 10.6052 7.94667 10.0267 7.57466 9.38959C7.43063 9.14154 7.55966 9.00751 7.68368 8.88448C7.79471 8.77345 7.93174 8.59542 8.05476 8.45038C8.15666 8.32518 8.24018 8.18608 8.30282 8.03729C8.33578 7.96892 8.35112 7.89339 8.34745 7.81758C8.34378 7.74176 8.32122 7.66807 8.28181 7.6032C8.2198 7.47917 7.72469 6.2599 7.51865 5.76379C7.3176 5.28169 7.11356 5.3467 6.96052 5.3387C6.81649 5.3317 6.65146 5.3297 6.48642 5.3297C6.36088 5.3332 6.23742 5.36264 6.12381 5.41618C6.0102 5.46971 5.9089 5.54618 5.82628 5.64077C5.54624 5.90596 5.32451 6.22658 5.1752 6.58218C5.0259 6.93779 4.9523 7.3206 4.95909 7.70622C5.0394 8.64066 5.39086 9.53131 5.97031 10.2688C7.03246 11.8612 8.49049 13.15 10.2012 14.0086C10.6627 14.2068 11.1341 14.3811 11.6135 14.5307C12.119 14.6842 12.6533 14.7174 13.1739 14.6277C13.5187 14.5579 13.8452 14.4173 14.1329 14.2148C14.4206 14.0124 14.6631 13.7524 14.8453 13.4515C15.0077 13.0813 15.0578 12.6716 14.9893 12.2732C14.9283 12.1692 14.7632 12.1082 14.5152 11.9842ZM17.0077 2.90317C15.3073 1.20315 13.047 0.178982 10.6477 0.0213432C8.24843 -0.136296 5.87359 0.583335 3.96535 2.04626C2.05712 3.50918 0.745521 5.61571 0.274754 7.97365C-0.196014 10.3316 0.206127 12.7803 1.40631 14.8638L0 19.9999L5.25515 18.6226C6.70863 19.414 8.33721 19.8287 9.99219 19.8289H9.99619C11.9567 19.8279 13.873 19.2458 15.5028 18.1562C17.1327 17.0666 18.403 15.5184 19.1533 13.7071C19.9037 11.8959 20.1003 9.90283 19.7184 7.97986C19.3365 6.05689 18.3932 4.29026 17.0077 2.90316V2.90317ZM14.3741 16.8952C13.062 17.7177 11.5448 18.1541 9.99619 18.1545H9.99219C8.51677 18.1544 7.06853 17.7575 5.79927 17.0052L5.4982 16.8272L2.37952 17.6454L3.2117 14.6047L3.01666 14.2927C2.15102 12.9122 1.71416 11.306 1.76132 9.6773C1.80849 8.04856 2.33756 6.47039 3.28164 5.14233C4.22572 3.81428 5.5424 2.79599 7.06519 2.21623C8.58799 1.63648 10.2485 1.52129 11.8368 1.88524C13.425 2.24919 14.8697 3.07593 15.9881 4.26091C17.1065 5.4459 17.8484 6.93591 18.12 8.54254C18.3916 10.1492 18.1807 11.8003 17.5139 13.287C16.8472 14.7738 15.7545 16.0294 14.3741 16.8952Z" fill="#FFFFFF"/>
+                        </svg>
+
+                        <span class="info__card___adress">+55 (11) 5908-8032</span>
+                    </a>
+
+                    <a href="mailTo:genu@dux.com" target="_blank" class="container__card___adress">
+
+                        <svg class="vetor__redes-sociais___fale-conosco vetor-email__fale-conosco" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="vetor__redes-sociais___fale-conosco" d="M3.33268 3.33325H16.666C17.5827 3.33325 18.3327 4.08325 18.3327 4.99992V14.9999C18.3327 15.9166 17.5827 16.6666 16.666 16.6666H3.33268C2.41602 16.6666 1.66602 15.9166 1.66602 14.9999V4.99992C1.66602 4.08325 2.41602 3.33325 3.33268 3.33325Z" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="vetor__redes-sociais___fale-conosco" d="M18.3327 5L9.99935 10.8333L1.66602 5" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        <span class="info__card___adress">genu@dux.com</span>
+                    </a>
+
+                    <a href="https://duxinnovation.com/dux/site/index.html" target="_blank" class="container__card___adress">
+
+                        <svg class="vetor__redes-sociais___fale-conosco vetor-site__fale-conosco" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="vetor__redes-sociais___fale-conosco" d="M9.99935 18.3332C14.6017 18.3332 18.3327 14.6022 18.3327 9.99984C18.3327 5.39746 14.6017 1.6665 9.99935 1.6665C5.39698 1.6665 1.66602 5.39746 1.66602 9.99984C1.66602 14.6022 5.39698 18.3332 9.99935 18.3332Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="vetor__redes-sociais___fale-conosco" d="M1.66602 10H18.3327" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="vetor__redes-sociais___fale-conosco" d="M9.99935 1.6665C12.0837 3.94846 13.2683 6.90987 13.3327 9.99984C13.2683 13.0898 12.0837 16.0512 9.99935 18.3332C7.91495 16.0512 6.73039 13.0898 6.66602 9.99984C6.73039 6.90987 7.91495 3.94846 9.99935 1.6665V1.6665Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        <span class="info__card___adress">duxinnovation.com</span>
+                    </a>
+
+                    <section class="secao__adress___container">
+                        <a href="#" class="link__adress___container">
+                            <svg class="vetor__redes-sociais___fale-conosco" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="vetor__redes-sociais___fale-conosco" d="M18.7825 5.34992C18.6835 4.95443 18.4819 4.59206 18.1981 4.29942C17.9142 4.00679 17.5581 3.79424 17.1658 3.68325C15.7325 3.33325 9.99917 3.33325 9.99917 3.33325C9.99917 3.33325 4.26584 3.33325 2.83251 3.71659C2.44021 3.82757 2.08416 4.04012 1.8003 4.33276C1.51644 4.62539 1.31483 4.98776 1.21584 5.38325C0.95352 6.83788 0.825204 8.31351 0.832508 9.79158C0.823157 11.2808 0.951481 12.7677 1.21584 14.2333C1.32497 14.6165 1.5311 14.965 1.81429 15.2453C2.09749 15.5256 2.44819 15.7281 2.83251 15.8333C4.26584 16.2166 9.99917 16.2166 9.99917 16.2166C9.99917 16.2166 15.7325 16.2166 17.1658 15.8333C17.5581 15.7223 17.9142 15.5097 18.1981 15.2171C18.4819 14.9244 18.6835 14.5621 18.7825 14.1666C19.0428 12.7229 19.1711 11.2585 19.1658 9.79158C19.1752 8.30238 19.0469 6.8155 18.7825 5.34992V5.34992Z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path class="vetor__redes-sociais___fale-conosco" d="M8.125 12.5167L12.9167 9.79165L8.125 7.06665V12.5167Z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="link__adress___container">
+                            <svg class="vetor__redes-sociais___fale-conosco" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="vetor__redes-sociais___fale-conosco" d="M4.99935 7.5H1.66602V17.5H4.99935V7.5Z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path class="vetor__redes-sociais___fale-conosco" d="M13.334 6.66675C14.6601 6.66675 15.9318 7.19353 16.8695 8.13121C17.8072 9.0689 18.334 10.3407 18.334 11.6667V17.5001H15.0007V11.6667C15.0007 11.2247 14.8251 10.8008 14.5125 10.4882C14.1999 10.1757 13.776 10.0001 13.334 10.0001C12.892 10.0001 12.468 10.1757 12.1555 10.4882C11.8429 10.8008 11.6673 11.2247 11.6673 11.6667V17.5001H8.33398V11.6667C8.33398 10.3407 8.86077 9.0689 9.79845 8.13121C10.7361 7.19353 12.0079 6.66675 13.334 6.66675V6.66675Z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path class="vetor__redes-sociais___fale-conosco" d="M3.33268 5.00008C4.25316 5.00008 4.99935 4.25389 4.99935 3.33341C4.99935 2.41294 4.25316 1.66675 3.33268 1.66675C2.41221 1.66675 1.66602 2.41294 1.66602 3.33341C1.66602 4.25389 2.41221 5.00008 3.33268 5.00008Z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="link__adress___container">
+                            <svg class="vetor__redes-sociais___fale-conosco" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="vetor__redes-sociais___fale-conosco" d="M14.166 1.66675H5.83268C3.5315 1.66675 1.66602 3.53223 1.66602 5.83342V14.1667C1.66602 16.4679 3.5315 18.3334 5.83268 18.3334H14.166C16.4672 18.3334 18.3327 16.4679 18.3327 14.1667V5.83342C18.3327 3.53223 16.4672 1.66675 14.166 1.66675Z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path class="vetor__redes-sociais___fale-conosco" d="M13.3337 9.47501C13.4366 10.1685 13.3181 10.8769 12.9952 11.4992C12.6723 12.1215 12.1614 12.6262 11.5351 12.9414C10.9088 13.2566 10.1991 13.3663 9.5069 13.2549C8.81468 13.1436 8.17521 12.8167 7.67944 12.321C7.18367 11.8252 6.85685 11.1857 6.74546 10.4935C6.63408 9.8013 6.74379 9.09159 7.05901 8.46532C7.37423 7.83905 7.8789 7.32812 8.50123 7.00521C9.12356 6.68229 9.83187 6.56383 10.5254 6.66667C11.2328 6.77158 11.8878 7.10123 12.3935 7.60693C12.8992 8.11263 13.2288 8.76757 13.3337 9.47501Z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path class="vetor__redes-sociais___fale-conosco" d="M14.584 5.41675H14.5923" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="link__adress___container">
+                            <svg class="vetor__redes-sociais___fale-conosco" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="vetor__redes-sociais___fale-conosco" d="M15.0007 1.66675H12.5007C11.3956 1.66675 10.3358 2.10573 9.55437 2.88714C8.77297 3.66854 8.33398 4.72835 8.33398 5.83341V8.33342H5.83398V11.6667H8.33398V18.3334H11.6673V11.6667H14.1673L15.0007 8.33342H11.6673V5.83341C11.6673 5.6124 11.7551 5.40044 11.9114 5.24416C12.0677 5.08788 12.2796 5.00008 12.5007 5.00008H15.0007V1.66675Z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </section>
+
                 </section>
 
-                <section class="secao__motivacao___lgpd">
-
-                    <section class="secao__conteudo___motivacao">
-                        <h4 class="titulo__motivacao___lgpd">Motivação</h4>
-
-
-                        <div class="container__input___radio">
-
-                            <div class="container__input__radio-button">
-                                <div class="container__input___opcao">
-                                    <input name="Motivação" type="radio" class="input__motivacao___form">
-                                </div>
-                            </div>
-
-                            <label for="Motivação" class="label__input___radio">Acesso</label>
-
-                        </div>
-
-                        <div class="container__input___radio">
-
-                            <div class="container__input__radio-button">
-                                <div class="container__input___opcao">
-                                    <input name="Motivação" type="radio" class="input__motivacao___form">
-                                </div>
-                            </div>
-
-                            <label for="Motivação" class="label__input___radio">Correção aos dados</label>
-
-                        </div>
-
-                        <div class="container__input___radio">
-
-                            <div class="container__input__radio-button">
-                                <div class="container__input___opcao">
-                                    <input name="Motivação" type="radio" class="input__motivacao___form">
-                                </div>
-                            </div>
-
-                            <label for="Motivação" class="label__input___radio">Anonimização ou bloqueio dos dados desnecessários</label>
-
-                        </div>
-
-                        <div class="container__input___radio">
-
-                            <div class="container__input__radio-button">
-                                <div class="container__input___opcao">
-                                    <input name="Motivação" type="radio" class="input__motivacao___form">
-                                </div>
-                            </div>
-
-                            <label for="Motivação" class="label__input___radio">Confirmação de existência de tratamento</label>
-
-                        </div>
-
-                        <div class="container__input___radio">
-
-                            <div class="container__input__radio-button">
-                                <div class="container__input___opcao">
-                                    <input name="Motivação" type="radio" class="input__motivacao___form">
-                                </div>
-                            </div>
-
-                            <label for="Motivação" class="label__input___radio">Eliminação dos dados</label>
-
-                        </div>
-
-                        <div class="container__input___radio">
-
-                            <div class="container__input__radio-button">
-                                <div class="container__input___opcao">
-                                    <input name="Motivação" type="radio" class="input__motivacao___form">
-                                </div>
-                            </div>
-
-                            <label for="Motivação" class="label__input___radio">Informação das entidades que o controlador compartilhou</label>
-
-                        </div>
-
-                        <div class="container__input___radio">
-
-                            <div class="container__input__radio-button">
-                                <div class="container__input___opcao">
-                                    <input name="Motivação" type="radio" class="input__motivacao___form">
-                                </div>
-                            </div>
-
-                            <label for="Motivação" class="label__input___radio">Informação sobre não fornecer consentimento</label>
-
-                        </div>
-
-                        <div class="container__input___radio">
-
-                            <div class="container__input__radio-button">
-                                <div class="container__input___opcao">
-                                    <input name="Motivação" type="radio" class="input__motivacao___form">
-                                </div>
-                            </div>
-
-                            <label for="Motivação" class="label__input___radio">Oposição ao tratamento, se irregular</label>
-
-                        </div>
-
-                        <div class="container__input___radio">
-
-                            <div class="container__input__radio-button">
-                                <div class="container__input___opcao">
-                                    <input name="Motivação" type="radio" class="input__motivacao___form">
-                                </div>
-                            </div>
-
-                            <label for="Motivação" class="label__input___radio">Portabilidade dos dados a outro fornecedor</label>
-
-                        </div>
-
-                        <div class="container__input___radio">
-
-                            <div class="container__input__radio-button">
-                                <div class="container__input___opcao">
-                                    <input name="Motivação" type="radio" class="input__motivacao___form">
-                                </div>
-                            </div>
-
-                            <label for="Motivação" class="label__input___radio">Revogação do consentimento</label>
-
-                        </div>
-
-                        <button type="submit" class="botao__enviar___lgpd">Enviar</button>
-                    </section>
-                </section>
-
-            </form>
+            </section>
 
         </main>
 
