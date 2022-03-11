@@ -645,8 +645,16 @@
             font-size: 14px;
 
             color: #FFFFFF;
-        }
 
+            transition: all .15s ease-in-out;
+        }
+        .botao__form___fale-conosco:hover{
+            background-color: #FFFFFF;
+
+            color: var(--primary-dark);
+            
+            transition: all .15s ease-in-out;
+        }
         /*--------------------RODAPE------------------*/
         .rodape{
             display: flex;

@@ -384,10 +384,10 @@
         }
         @media (min-width:1441px){
             .container__carousel-funcionalidades{
-                width: 76vw;
+                width: 68.8rem;
             }
             .item__lista___funcionalidades{
-                width: 76vw;
+                width: 68.938rem;
 
                 gap: 6.313rem;
             }
