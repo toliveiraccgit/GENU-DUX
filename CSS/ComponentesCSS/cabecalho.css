@@ -219,6 +219,9 @@
         background-color: var(--primary-dark);
         transition: all .15s ease-in-out;
     }
+    .secao__menu-aberto___mobile{
+        display: none;
+    }
 }
 
 @media (max-width:1200px){
