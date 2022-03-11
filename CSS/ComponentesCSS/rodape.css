@@ -130,6 +130,9 @@
     .vetor-email{
         transition: all .15s ease-in-out;
     }
+    #secao__copyright-mobile{
+        display: none;
+    }
     
 }
 @media (max-width:1200px){
