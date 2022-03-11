@@ -174,6 +174,25 @@
         font-size: 16px;
 
         color: #FFFFFF;
+
+        background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+
+        background-position-x:center;
+        background-position-y:center;
+        background-repeat: no-repeat;
+        
+        background-size: 0% 0%;
+
+        transition: all .4s ease-in-out;
+    }
+    .botao__enviar___mensagem:active{
+        background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+        background-position-y: center;
+        background-position-x: center;
+
+        background-size: 20rem 20rem;
+
+        transition: all .4s ease-in-out;
     }
     /*-----------------------MOTIVACAO--------------------*/
     .secao__adress___fale-conosco{
@@ -210,6 +229,23 @@
 
 
         transition: all .1s ease-in-out;
+
+        background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+
+        background-position-x:center;
+        background-position-y:center;
+        background-repeat: no-repeat;
+        
+        background-size: 0% 0%;
+    }
+    .container__card___adress:active{
+        background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+        background-position-y: center;
+        background-position-x: center;
+
+        background-size: 15rem 15rem;
+
+        transition: all 3s ease-in-out;
     }
     .container__card___adress:hover{
         background-color: #FFFFFF;

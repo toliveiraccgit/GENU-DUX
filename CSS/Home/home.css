@@ -87,17 +87,37 @@
             font-family: 'Graphik-Medium';
             font-size: 14px;
 
-            color: var(--high-dark);
+            color: #BBBBBB;
 
-            padding-left: 1.7rem;
-            padding-top: .12rem;
-            padding-bottom: .1rem;
+            padding-left: 2.75rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-right: 1rem;
 
-            background-image: url("../../Assets/Vetores/vetor-saiba-mais.svg");
-            background-position-x: left;
-            background-position-y: -.1rem;
+            background-image: url("../../Assets/Vetores/vetor-saiba-mais.svg"), url("../../Assets/Interações/active-saiba-mais.svg");
+            background-position-x: 1rem, center;
+            background-position-y: center, center;
             background-repeat: no-repeat;
-        
+            
+            background-size: auto auto, 0% 0%;
+
+            transition: all .15s ease-in-out;
+
+            border-radius: 8px;
+        }
+        .botao__saiba-mais:hover{
+            background-color: #E3E5E6;
+
+            transition: all .15s ease-in-out;
+        }
+        .botao__saiba-mais:active{
+            background-image: url("../../Assets/Vetores/vetor-saiba-mais.svg"), url("../../Assets/Interações/active-saiba-mais.svg");
+            background-position-y: center, center;
+            background-position-x: 1rem, center;
+
+            background-size: auto auto, 200% 200%;
+
+            transition: all .2s ease-in-out;
         }
         .imagem__banner{
             width: 36.469rem;

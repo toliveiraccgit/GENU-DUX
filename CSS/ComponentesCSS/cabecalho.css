@@ -195,6 +195,23 @@
         border-radius: 8px;
 
         transition: all .15s ease-in-out;
+
+        background-image: url("../../Assets/Interações/active-login.svg");
+
+        background-position-x:center;
+        background-position-y:center;
+        background-repeat: no-repeat;
+        
+        background-size: 0% 0%;
+    }
+    .botao__login:active{
+        background-image: url("../../Assets/Interações/active-login.svg");
+        background-position-y: center;
+        background-position-x: center;
+
+        background-size: 150% 150%;
+
+        transition: all .2s ease-in-out;
     }
     .botao__login:hover{
         color: #FFFFFF;
