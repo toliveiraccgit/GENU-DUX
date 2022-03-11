@@ -187,11 +187,13 @@
         }
         .secao__cards___info-produto{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
             gap: 8.625rem;
 
-            width: 100vw;
+            width: 86vw;
         }
         .container__card___info-produto{
             display: flex;

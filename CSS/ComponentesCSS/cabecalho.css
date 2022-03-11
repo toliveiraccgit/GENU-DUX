@@ -37,7 +37,7 @@
 
         transition: all .15s ease-in-out;
     }
-    .item__navegacao:hover{
+    .container__dropdown:hover .item__navegacao{
         color: var(--primary-dark);
         transition: all .15s ease-in-out;
     }
