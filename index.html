@@ -172,15 +172,19 @@
 
                 <a href="./login.html" class="botao__login___menu-aberto">Login</a>
 
-                <div class="container__dropdown-menu-aberto">
+                <div class="container__dropdown-menu-aberto" id="container-conteudo">
                     <div class="container__botao___dropdown-menu-aberto">
-                        <button class="item__navegacao botao__produtos">Produtos</button>
-                        <svg class="seta__dropdown" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="seta__dropdown-color" d="M1 6L6 1L11 6" stroke="#A3A3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+                        <button class="item__navegacao botao__produtos"  id="botao-dropdown"  onclick="abreDropdown()">Produtos</button>
+
+                        <button class="item__navegacao botao__produtos"  id="botao-fecha-dropdown"  onclick="fechaDropdown()">Produtos</button>
+
+                        <svg class="seta__dropdown" id="seta-dropdown" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="seta__dropdown-color" id="vetor-seta-dropdown" d="M1 6L6 1L11 6" stroke="#A3A3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
 
-                    <div class="container__conteudo___dropdown-menu-aberto">
+                    <div class="container__conteudo___dropdown-menu-aberto" id="conteudo-dropdown">
 
                         <ul class="lista__navegacao___dropdown">
 
