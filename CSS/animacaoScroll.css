@@ -24,7 +24,7 @@
 
 @media (max-width:1200px){
 	.js .anime-left {
-		opacity: 0;
+		opacity: 1;
 		transform: translate3D(0, 0px, 0px);
 		transition: .5s all ease-out;
 	}
@@ -36,7 +36,7 @@
 	}
 	
 	.js .anime-right {
-		opacity: 0;
+		opacity: 1;
 		transform: translate3D(0, 0px, 0px);
 		transition: .5s all ease-out;
 	}

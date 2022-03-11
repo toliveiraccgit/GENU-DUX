@@ -223,7 +223,9 @@
 
             color: #FFFFFF;
         }
-
+        .secao__cards___tab-mobile{
+            display: none;
+        }
         /*------------------------TABS---------------------*/
 
         .secao__tab-produto{

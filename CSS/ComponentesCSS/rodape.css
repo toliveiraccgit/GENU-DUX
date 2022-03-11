@@ -130,4 +130,107 @@
     .vetor-email{
         transition: all .15s ease-in-out;
     }
+    
+}
+@media (max-width:1200px){
+    /*--------------------RODAPE------------------*/
+    #rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.75rem;
+
+        padding: 3.125rem 0 3.563rem 0;
+
+        width: 100vw;
+    }
+   #secao__adress{
+        display: flex;
+        flex-direction: column;
+
+        width: 86vw;
+    }
+    .logo__genu{
+        width: 6.889rem;
+    }
+    #secao__redes-sociais{
+        gap: 1.667rem;
+
+        margin-top: 2.164rem;
+        margin-bottom: 0;
+
+        width: 86vw;
+    }
+    #secao__copyright{
+        display: none;
+    }
+    .texto__copyright{
+        font-family: 'Graphik-Regular';
+        font-size: 15px;
+
+        color: var(--low-medium);
+
+        padding-left: 1.5rem;
+
+        background-image: url("../../Assets/Vetores/vetor-cop.svg");
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+    .destaque__genu{
+        padding-left: .9rem;
+        margin-left: 0.438rem;
+
+        background-image: url("../../Assets/Vetores/vetor-elipse.svg");
+        background-position: left center;
+        background-repeat: no-repeat;
+
+        font-family: 'Graphik-SemiBold';
+    }
+    .container__termos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .25rem;
+
+        margin-top: 1.5rem;
+    }
+    .link__termo-privacidade{
+        font-family: 'Graphik-Regular';
+        font-size: 15px;
+
+        color: var(--low-medium);
+    }
+    #secao__navegacao___footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+
+        width: 86vw;
+    }
+    .container__lista___navegacao{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    .titulo__lista___navegacao{
+        font-family: var(--inter);
+        font-weight: var(--bold);
+        font-size: 14px;
+
+        color: var(--low-dark);
+    }
+    .lista__navegacao___footer{
+        gap: 1rem;
+    }
+    .item__lista___footer{
+        font-size: 14px;
+    }
+    #secao__copyright-mobile{
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 1.25rem;
+    }
 }

@@ -220,3 +220,215 @@
         transition: all .15s ease-in-out;
     }
 }
+
+@media (max-width:1200px){
+    /*-------------------------CABECALHO-----------------------*/
+    #cabecalho{
+        padding-left: 1.5rem;
+        padding-right: 1.688rem;
+
+        overflow-y: visible;
+
+        position: fixed;
+
+        background-color: #FFFFFF;
+
+        z-index: 10000;
+    }
+    #secao__navegacao, #secao__login___cabecalho{
+        display: none;
+    }
+    #secao__navegacao___mobile{
+        display: block;
+    }
+    .botao__abre-menu{
+        background-color: transparent;
+        border: none;
+    }
+    /*--------------------------MENU-ABERTO-------------------*/
+    .secao__menu-aberto___mobile{
+        width: 100vw;
+
+        position: fixed;
+
+        top: 0px;
+        left: 0%;
+
+        padding-top: 3.25rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 11.625rem;
+
+        background-color: #FFFFFF;
+
+        z-index: 20000;
+
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+
+
+        display: none;
+        flex-direction: column;
+
+        animation: animaMenu .8s ease-in-out forwards;
+    }
+    @keyframes animaMenu {
+        from{
+            top: -100%;
+        }
+        to{
+            top: 0%;
+        }
+    }
+    @keyframes animaFechaMenu {  
+        from{
+            display: flex;
+        }
+        to{
+            display: none;
+        }
+    }
+    .container__cabecalho___menu-aberto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 86vw;
+
+        margin-bottom: 3.75rem;
+    }
+    .item__navegacao {
+        font-family: var(--inter);
+        color: var(--low-light);
+        font-weight: var(--medium);
+        font-size: 18px;
+
+        transition: all .15s ease-in-out;
+    }
+    .botao__fecha___menu-aberto{
+        background-image: url("../../Assets/Mobile/Vetores/vetor-fecha-menu.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        background-color: transparent;
+        border: none;
+
+        width: 1rem;
+        height: 0.9rem;
+    }
+    .botao__login___menu-aberto{
+        font-family: var(--inter);
+        font-weight: var(--semi-bold);
+
+        color: var(--primary-dark);
+
+        padding: 1rem 1.3rem;
+
+        margin-bottom: 2rem;
+
+        border: 1px solid var(--primary-dark);
+        border-radius: 8px;
+
+        transition: all .15s ease-in-out;
+
+        background-image: url("../../Assets/Interações/active-login.svg");
+
+        background-position-x:center;
+        background-position-y:center;
+        background-repeat: no-repeat;
+        
+        background-size: 0% 0%;
+
+        text-align: center;
+    }
+    .botao__login___menu-aberto:active{
+        background-image: url("../../Assets/Interações/active-login.svg");
+        background-position-y: center;
+        background-position-x: center;
+
+        background-size: 400% 400%;
+
+        transition: all .2s ease-in-out;
+    }
+    .botao__login___menu-aberto:hover{
+        color: #FFFFFF;
+
+        background-color: var(--primary-dark);
+        transition: all .15s ease-in-out;
+    }
+    .container__botao___dropdown-menu-aberto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.813rem;
+    }
+    .container__dropdown-menu-aberto{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 86vw;
+        gap: 1.813rem;
+
+        height: auto;
+
+        cursor: pointer;
+    }
+    .item__lista___dropdown {
+        font-family: var(--inter);
+        color: var(--low-light);
+        font-weight: var(--medium);
+        font-size: 18px;
+        transition: all .15s ease-in-out;
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+    .container__botao___dropdown{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .5rem;
+
+        cursor: pointer;
+    }
+    .botao__produtos{
+        border: none;
+        background-color: transparent;
+    }
+    .seta__dropdown{
+        transition: all .2s ease-in-out;
+    }
+    .container__dropdown:hover  .botao__produtos{
+        color: #00BD62;
+
+        transition: all .15s ease-in-out;
+    }
+    .container__dropdown:hover  .seta__dropdown-color{
+        stroke: #00BD62;
+
+        transition: all .15s ease-in-out;
+    }
+    .container__conteudo___dropdown-menu-aberto{
+        display: flex;
+        flex-direction: column;
+
+        width: 15.4rem;
+
+        visibility: visible;
+
+        background: #FFFFFF;
+        border-radius: 8px;
+
+        opacity: 1;
+
+        padding-left: .5rem;
+    
+    }
+    .secao__link-menu-aberto{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        margin-top: 2.5rem;
+    }
+}
