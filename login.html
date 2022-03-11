@@ -98,17 +98,19 @@
 
                             <div class="container__input___form">
 
-                                <label for="Nome" class="label__input___form" id="label-nome">Email <span class="destaque__green">*</span></label>
+                                <label for="Nome" class="label__input___form" id="label-nome">Email</label>
                                 <input type="email" class="input__form" id="input-nome" required onblur="desativaLabel()" onfocus="ativaLabel()">
-
+                                <span class="mensagem__erro-email">Email incorreto ou não cadastrado</span>
                             </div>
 
                             <div class="container__input___form">
 
-                                <label for="Nome" class="label__input___form" id="label-senha">Senha<span class="destaque__green">*</span></label>
+                                <label for="Nome" class="label__input___form" id="label-senha">Senha</label>
                                 <input type="password" class="input__form" id="input-senha" required onblur="desativaLabelSenha()" onfocus="ativaLabelSenha()">
 
                                 <button type="button" class="botao__visualizar-senha" id="olho"></button>
+
+                                <span class="mensagem__erro-senha">Senha incorreta</span>
 
                             </div>
                             <section class="secao__botoes___login">

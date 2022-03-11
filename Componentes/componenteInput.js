@@ -10,6 +10,8 @@ const labelInputMensagem = document.querySelector('#label-mensagem')
 
 const labelInputSenha = document.querySelector('#label-senha')
 
+const labelEmailInvalido = document.querySelector('.label__input___form-erro')
+
 
 function desativaLabel(){
     if (document.querySelector('#input-nome').value == " ") {
@@ -35,11 +37,13 @@ function desativaLabelEmail(){
         labelInputEmail.style.visibility = ` hidden `
     }
     labelInputEmail.style.color = ` #A3A3A3 `
+    
 }
 
 function ativaLabelEmail(){
         labelInputEmail.style.visibility = ` visible `
         labelInputEmail.style.color = ` #00BD62 `
+        labelEmailInvalido.style.color = ` #EB3F3F `
 }
 
 function desativaLabelCpf(){
@@ -99,6 +103,7 @@ function desativaLabelSenha(){
         labelInputSenha.style.visibility = ` hidden `
     }
     labelInputSenha.style.color = ` #A3A3A3 `
+    
 }
 
 window.onload = () => {
