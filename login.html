@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./CSS/Login/login.css">
+        <link rel="stylesheet" href="./CSS/animacaoScroll.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/cabecalho.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/rodape.css">
+        <style type="text/css" media="screen, print">
+            @font-face {
+            font-family: 'Graphik-Black';
+            font-style: normal;
+            font-weight: normal;
+            src: url('./Font/GraphikBlack.otf');
+            }
+
+            @font-face {
+            font-family: 'Graphik-Bold';
+            font-style: normal;
+            font-weight: normal;
+            src: url('./Font/GraphikBold.otf');
+            }
+
+            @font-face {
+            font-family: 'Graphik-Light';
+            font-style: normal;
+            font-weight: normal;
+            src: url('./Font/GraphikLight.otf');
+            }
+
+            @font-face {
+            font-family: 'Graphik-Medium';
+            font-style: normal;
+            font-weight: normal;
+            src: url('./Font/GraphikMedium.otf');
+            }
+
+            @font-face {
+            font-family: 'Graphik-Regular';
+            font-style: normal;
+            font-weight: normal;
+            src: url('./Font/GraphikRegular.otf');
+            }
+
+            @font-face {
+            font-family: 'Graphik-SemiBold';
+            font-style: normal;
+            font-weight: normal;
+            src: url('./Font/GraphikSemibold.otf');
+            }
+
+            @font-face {
+            font-family: 'Graphik-Super';
+            font-style: normal;
+            font-weight: normal;
+            src: url('./Font/GraphikSuper.otf');
+            }
+
+            @font-face {
+            font-family: 'Graphik-Thin';
+            font-style: normal;
+            font-weight: normal;
+            src: url('./Font/GraphikThin.otf');
+            }
+            
+            
+        </style>
+        <link href="./CSS/base.css" rel="stylesheet">
+        <link href="./CSS/reset.css" rel="stylesheet">
+        <link href="./CSS/normalize.css" rel="stylesheet">
+        <title>Login | GENU</title>
+        <link rel="shortcut icon" href="./Assets/Vetores/ICO-FAVICON-GENU.svg" type="image/x-icon"/>
+    </head>
+
+    <body id="body">
+
+
+        <main class="conteudo">
+
+            <section class="form__fale-conosco">
+            
+                <form class="secao__dados">
+
+                    <div class="container__cabecalho___dados">
+
+                        <h1 class="titulo__cabecalho___dados">Bem-vindo</h1>
+                        <p class="descricao__cabecalho___dados">Faça login para acessar a plataforma</span></p>
+
+                    </div>
+
+                    <section class="secao__form___dados">
+
+                        <section class="secao__inputs___form">
+
+                            <div class="container__input___form">
+
+                                <label for="Nome" class="label__input___form" id="label-nome">Email <span class="destaque__green">*</span></label>
+                                <input type="email" class="input__form" id="input-nome" required onblur="desativaLabel()" onfocus="ativaLabel()">
+
+                            </div>
+
+                            <div class="container__input___form">
+
+                                <label for="Nome" class="label__input___form" id="label-senha">Senha<span class="destaque__green">*</span></label>
+                                <input type="password" class="input__form" id="input-senha" required onblur="desativaLabelSenha()" onfocus="ativaLabelSenha()">
+
+                                <button type="button" class="botao__visualizar-senha" id="olho"></button>
+
+                            </div>
+                            <section class="secao__botoes___login">
+
+                                <div class="container__checkmarck">
+
+                                    <div class="container__input___checkmarck">
+                                        <input name="Manter Conectado" type="checkbox" class="input__manter-conectado">
+                                    </div>
+
+                                    <label for="Manter Conectado" class="label__manter-login">Mantenha-me conectado</label>
+
+                                </div>
+                                
+                                <a href="#" class="link__esquece-senha">Esqueci a senha</a>
+
+                            </section>
+                        </section>
+
+                        <button type="submit" class="botao__entrar-login"> 
+                            <svg class="botao-loading-login" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.99935 17.8333C14.6017 17.8333 18.3327 14.1023 18.3327 9.49996C18.3327 4.89759 14.6017 1.16663 9.99935 1.16663C5.39698 1.16663 1.66602 4.89759 1.66602 9.49996" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                            <svg class="vetor-check-login" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6673 1L5.50065 10.1667L1.33398 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                            Entrar
+                        </button>
+
+                        <section class="secao__botoes___lojas">
+
+                            <a href="#" class="botao__loja">
+
+                                <img src="./Assets/Login/GOOGLE-PLAY.png" alt="GOOGLE PLAY" class="imagem__loja">
+
+                            </a>
+
+                            <a href="#" class="botao__loja">
+
+                                <img src="./Assets/Login/APP-STORE.png" alt="GOOGLE PLAY" class="imagem__loja">
+
+                            </a>
+
+                        </section>
+                    </section>
+                </form>
+
+                <section class="secao__background-genu">
+
+                    <img src="./Assets/Login/logo-login.svg" alt="GENU" class="logo-genu__login">
+
+                </section>
+
+            </section>
+
+        </main>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" type="text/javascript"></script>
+        <script>
+                // Adiciona a classe .js ao elemento HTML. Assim eu garanto que os elementos só serão escondidos caso o JavaScript esteja habilitado
+                    var root = document.documentElement;
+                    root.className += ' js';
+
+                    // Cria a função boxTop responsável por definir a distância entre o topo to elemento e a página
+                    function boxTop(idBox) {
+                        var boxOffset = $(idBox).offset().top;
+                        return boxOffset;
+                    }
+
+                    // Verifica se o documento está pronto
+                    $(document).ready(function() {
+                        
+                                // target define os elementos que serão animados. Neste 	caso todos os que possuirem a classe .anime	
+                        var $target = $('.anime-left'),
+                                
+                                // animationClass define a classe que será injetada no elemento durante o scroll. É nessa classe que	definimos como a animação irá ocorrer
+                                animationClass = 'anime-init-left',
+                                
+                                // windowHeight pega a altura total da janela do browser
+                                windowHeight = $(window).height(),
+                                
+                                // offset é definido a partir da altura da janela, menos um quarto dessa atlura. Isso vai garantir que o browser não fique com um espaço grande em branco
+                                offset = windowHeight - (windowHeight / 7);
+
+                        // animeScroll é a função responsável por adicionar a classe animationClass ao elemento da página.
+                        function animeScroll() {
+                            
+                            // documentTop vai definir a distância entre o topo da página e o scroll. O valor é atualizado sempre a função animeScroll é ativada.
+                            var documentTop = $(document).scrollTop();
+                            
+                            // target.each serve para adicionarmos a função a cada elemento que tiver a classe do target. Assim garantimos que elementos com distâncias diferentes do topo da página, animem no momento correto
+                            $target.each(function() {
+                                
+                                // o if verifica se a distância entre o topo da página e o scroll é maior que a distância do elemento - o valor fo offset
+                                if (documentTop > boxTop(this) - offset) {
+                                    
+                                    // caso seja verdadeiro, ele vai adicionar a classe que está em animationClass ao elemento
+                                    $(this).addClass(animationClass);
+                                } else {
+                                    
+                                    // caso seja falso ele vai remover a classe do elemento. Se você não quiser que a animação ocorra mais de uma vez, ou seja, quando o cliente voltar o scroll para cima os elementos continuem fixos, basta remover este else
+                                    $(this).removeClass(animationClass);
+                                }
+                            });
+                        }
+                        
+                        // dispara a função animeScroll, nesse primeiro momento ele dispara para verificar se já não existe nenhum elemento na página que esteja no campo de visão do usuário
+                        animeScroll();
+                        
+                        // com o document.scroll vamos verificar sempre que um evento de scroll ocorrer na página
+                        $(document).scroll(function() {
+                            
+                            // quando o evento de scroll ocorre disparamos novamente a função animeScroll. Com um setTimeout para evetira que ela seja disparada diversas vezes
+                            setTimeout(function() {
+                                animeScroll()
+                            }, 150);
+                        });
+                    });
+        </script>
+        <script>
+            // Adiciona a classe .js ao elemento HTML. Assim eu garanto que os elementos só serão escondidos caso o JavaScript esteja habilitado
+                var root = document.documentElement;
+                root.className += ' js';
+    
+                // Cria a função boxTop responsável por definir a distância entre o topo to elemento e a página
+                function boxTop(idBox) {
+                    var boxOffset = $(idBox).offset().top;
+                    return boxOffset;
+                }
+    
+                // Verifica se o documento está pronto
+                $(document).ready(function() {
+                    
+                            // target define os elementos que serão animados. Neste 	caso todos os que possuirem a classe .anime	
+                    var $target = $('.anime-right'),
+                            
+                            // animationClass define a classe que será injetada no elemento durante o scroll. É nessa classe que	definimos como a animação irá ocorrer
+                            animationClass = 'anime-init-right',
+                            
+                            // windowHeight pega a altura total da janela do browser
+                            windowHeight = $(window).height(),
+                            
+                            // offset é definido a partir da altura da janela, menos um quarto dessa atlura. Isso vai garantir que o browser não fique com um espaço grande em branco
+                            offset = windowHeight - (windowHeight / 7);
+    
+                    // animeScroll é a função responsável por adicionar a classe animationClass ao elemento da página.
+                    function animeScroll() {
+                        
+                        // documentTop vai definir a distância entre o topo da página e o scroll. O valor é atualizado sempre a função animeScroll é ativada.
+                        var documentTop = $(document).scrollTop();
+                        
+                        // target.each serve para adicionarmos a função a cada elemento que tiver a classe do target. Assim garantimos que elementos com distâncias diferentes do topo da página, animem no momento correto
+                        $target.each(function() {
+                            
+                            // o if verifica se a distância entre o topo da página e o scroll é maior que a distância do elemento - o valor fo offset
+                            if (documentTop > boxTop(this) - offset) {
+                                
+                                // caso seja verdadeiro, ele vai adicionar a classe que está em animationClass ao elemento
+                                $(this).addClass(animationClass);
+                            } else {
+                                
+                                // caso seja falso ele vai remover a classe do elemento. Se você não quiser que a animação ocorra mais de uma vez, ou seja, quando o cliente voltar o scroll para cima os elementos continuem fixos, basta remover este else
+                                $(this).removeClass(animationClass);
+                            }
+                        });
+                    }
+                    
+                    // dispara a função animeScroll, nesse primeiro momento ele dispara para verificar se já não existe nenhum elemento na página que esteja no campo de visão do usuário
+                    animeScroll();
+                    
+                    // com o document.scroll vamos verificar sempre que um evento de scroll ocorrer na página
+                    $(document).scroll(function() {
+                        
+                        // quando o evento de scroll ocorre disparamos novamente a função animeScroll. Com um setTimeout para evetira que ela seja disparada diversas vezes
+                        setTimeout(function() {
+                            animeScroll()
+                        }, 150);
+                    });
+                });
+        </script>
+        <script src="./Componentes/Login/mostraSenha.js" type="text/javascript"></script>
+        <script src="./Componentes/Home/tabVetores.js" type="text/javascript"></script>
+        <script src="./Componentes/componenteInput.js" type="text/javascript"></script>
+    </body>

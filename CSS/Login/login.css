@@ -1,0 +1,339 @@
+@media (min-width:0px){
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .form__fale-conosco{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100vw;
+
+        overflow-y: visible;
+    }
+    /*-----------------------DADOS-LGPD--------------------*/
+    .secao__dados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3.5rem;
+
+        width: 50vw;
+        height: 100vh;
+
+    }
+    .container__cabecalho___dados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .titulo__cabecalho___dados{
+        font-family: 'Graphik-SemiBold';
+        font-size: 40px;
+
+        color: #292A2C;
+
+        margin: 0%;
+    }
+    .descricao__cabecalho___dados{
+        font-family: var(--inter);
+        font-weight: var(--medium);
+        font-size: 16px;
+
+        color: var(--low-light);
+
+        margin: 0%;
+    }
+    .secao__form___dados{
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+
+        width: 33vw;
+    }
+    .titulo__form___dados{
+        font-family: var(--inter);
+        font-weight: var(--bold);
+        font-size: 21.8px;
+
+        color: #000000;
+
+        margin: 0%;
+    }
+    .secao__inputs___form{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .container__input___form{
+        display: flex;
+        flex-direction: column;
+    }
+    .label__input___form{
+        font-family: 'Graphik-Regular';
+        font-size: 12px;
+
+        color: var(--low-light);
+
+        margin: 0%;
+
+        position: relative;
+        top: 2rem;
+        left: 1rem;
+
+        width: 7rem;
+
+        user-select: none;
+
+        z-index: 1;
+
+        transition: all .2s ease-in-out;
+
+        visibility: visible;
+    }
+    .input__form{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        border: 1px solid #828282;
+        border-radius: 8px;
+
+        width: 33vw;
+        height: 3.063rem;
+
+        font-family: 'Graphik-Regular';
+        font-size: 14px;
+
+        color: #000000;
+
+        background-color: transparent;
+
+        z-index: 200;
+
+        transition: all .2s ease-in-out;
+    }
+    .input__form:focus{
+        outline: 1px solid var(--primary-dark);
+
+        padding-top: 2.625rem;
+
+        height: 4.688rem;
+
+        transition: all .2s ease-in-out;
+    }
+    .text__area___form{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        border: 1px solid #828282;
+        border-radius: 8px;
+
+        width: 33vw;
+        height: 11.563rem;
+
+        font-family: 'Graphik-Regular';
+        font-size: 14px;
+
+        color: #000000;
+
+        resize: none;
+
+        transition: all .2s ease-in-out;
+    }
+    .text__area___form:focus{
+        outline: 1px solid var(--primary-dark);
+
+        padding-top: 2.625rem;
+
+        height: 12.863rem;
+        transition: all .2s ease-in-out;
+    }
+    .botao__entrar-login{
+        width: 33vw;
+
+        border: none;
+        background-color: #E3E5E6;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        text-align: center;
+
+        border-radius: 8px;
+
+        font-family: var(--inter);
+        font-weight: var(--semi-bold);
+        font-size: 16px;
+
+        color: #BBBBBB;
+
+        background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+
+        background-position-x:center;
+        background-position-y:center;
+        background-repeat: no-repeat;
+        
+        background-size: 0% 0%;
+
+        transition: all .4s ease-in-out;
+
+        position: relative;
+        top: -1rem;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0.604rem;
+    }
+    .botao__entrar-login:active{
+        background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+        background-position-y: center;
+        background-position-x: center;
+
+        background-size: 20rem 20rem;
+
+        transition: all .4s ease-in-out;
+    }
+    /*-----------------VARIANTES-BOTAO-LOGIN----------------*/
+    .botao__entrar-login-preenchido{
+        background-color: var(--primary-dark);
+        color: #FFFFFF;
+    }
+    .botao__entrar-login-preenchido:hover{
+        background-color: #00703A;
+        transition: all .15s ease-in-out;
+    }
+    .botao-loading-login{
+        display: none;
+    }
+    .botao-loading-login__ativado{
+        display: block;
+        animation: animalLoading .8s ease-in-out infinite;
+    }
+    .vetor-check-login{
+        display: none;
+    }
+    .vetor-check-login-ativado{
+        display: block;
+    }
+    @keyframes animalLoading {
+        100%{
+            transform: rotate(360deg)
+        }
+    }
+    .botao__visualizar-senha{
+        background-color: transparent;
+        border: none;
+        width: 1.475rem;
+        height: 1.2rem;
+        background-image: url("../../Assets/Login/vetor-olho-fechado.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        position: relative;
+        top: -2.1rem;
+        left: 92%;
+
+        z-index: 50000;
+    }
+    .secao__botoes___login{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 33vw;
+
+        position: relative;
+        top: -1rem;
+    }
+    .container__checkmarck{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    .container__input___checkmarck{
+        width: 1.438rem;
+        height: 1.438rem;
+    }
+    .input__manter-conectado{
+        all: unset;
+
+        width: 1.438rem;
+        height: 1.438rem;
+
+        background-color: transparent;
+        border-radius: 5px;
+
+        border: 1px solid #828282;
+
+        display: inline-block;
+
+        cursor: pointer;
+    }
+    .input__manter-conectado:checked{
+        background-color: var(--primary-dark);
+        color: var(--primary-dark);
+
+        border: 2px solid var(--primary-dark);
+
+        background-image: url("../../Assets/Login/vetor-checkbox.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    .label__manter-login{
+        font-family: 'Graphik-Regular';
+        font-size: 14px;
+
+        color: #828282;
+    }
+    .link__esquece-senha{
+        font-family: 'Graphik-Regular';
+        font-size: 14px;
+
+        color: var(--primary-dark);
+    }   
+    .secao__botoes___lojas{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3.066rem;
+
+        width: 33vw;
+    }
+    .imagem__loja{
+        width: 10.125rem;
+    }
+    /*-----------------------BACKGROUND-GENU--------------------*/   
+    .secao__background-genu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        width: 50vw;
+
+        height: 100vh;
+
+        background-color: var(--primary-dark);
+
+        background-image: url("../../Assets/Login/vetor-background-genu.svg");
+        background-position: 100% center;
+        background-repeat: no-repeat;
+        background-size: 130% 130%;
+    }
+    .logo-genu__login{
+        width: 20.666rem;
+    }
+}

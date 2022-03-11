@@ -8,6 +8,8 @@ const labelInputTelefone = document.querySelector('#label-telefone')
 
 const labelInputMensagem = document.querySelector('#label-mensagem')
 
+const labelInputSenha = document.querySelector('#label-senha')
+
 
 function desativaLabel(){
     if (document.querySelector('#input-nome').value == " ") {
@@ -79,10 +81,24 @@ function desativaLabelMensagem(){
     }
     labelInputMensagem.style.color = ` #A3A3A3 `
 }
-
 function ativaLabelMensagem(){
-        labelInputMensagem.style.visibility = ` visible `
-        labelInputMensagem.style.color = ` #00BD62 `
+    labelInputMensagem.style.visibility = ` visible `
+    labelInputMensagem.style.color = ` #00BD62 `
+}
+
+function ativaLabelSenha(){
+    labelInputSenha.style.visibility = ` visible `
+    labelInputSenha.style.color = ` #00BD62 `
+}
+
+function desativaLabelSenha(){
+    if (document.querySelector('#input-senha').value == " ") {
+        labelInputSenha.style.visibility = ` visible `
+    } 
+    if (document.querySelector('#input-senha').value && " ") {
+        labelInputSenha.style.visibility = ` hidden `
+    }
+    labelInputSenha.style.color = ` #A3A3A3 `
 }
 
 window.onload = () => {
@@ -126,5 +142,15 @@ window.onload = () => {
         if (document.querySelector('#input-mensagem').value && " ") {
             labelInputMensagem.style.visibility = ` hidden `
         }
+
+
+
+        if (document.querySelector('#input-senha').value == " ") {
+            labelInputSenha.style.visibility = ` visible `
+        } 
+        if (document.querySelector('#input-senha').value && " ") {
+            labelInputSenha.style.visibility = ` hidden `
+        }
+        labelInputSenha.style.color = ` #A3A3A3 `
 
 }
