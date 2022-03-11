@@ -667,6 +667,25 @@
             color: #FFFFFF;
 
             transition: all .15s ease-in-out;
+
+            background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+
+            background-position-x:center;
+            background-position-y:center;
+            background-repeat: no-repeat;
+            
+            background-size: 0% 0%;
+
+            transition: all .25s ease-in-out;
+        }
+        .botao__form___fale-conosco:active{
+            background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+            background-position-y: center;
+            background-position-x: center;
+
+            background-size: 20rem 20rem;
+
+            transition: all .25s ease-in-out;
         }
         .botao__form___fale-conosco:hover{
             background-color: #FFFFFF;
