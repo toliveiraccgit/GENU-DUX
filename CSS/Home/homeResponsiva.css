@@ -56,7 +56,36 @@
         text-align: center;
     }
     /*----------------------PRODUTOS---------------------*/
+    .tabs-produtos-mobile{
+        width: 86vw;
 
+        padding-top: 1.3rem;
+        padding-bottom: 1.3rem;
+        padding-right: 1.5rem;
+        padding-left: 1.625rem;
+
+        background-color: var(--primary-pastel);
+
+        border-radius: 8px;
+        border: none;
+
+        color: var(--primary-dark);
+
+        font-family: var(--inter);
+        font-weight: var(--regular);
+        font-size: 14px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .vetor-tab-saude-ocupacional-mobile, .vetor-tab-saude-ocupacional-mobile, .vetor-tab-seguranca-trabalho-mobile, .vetor-tab-relatorios-mobile, .vetor-tab-e-social-mobile{
+        stroke: #00BD62;
+        fill: #00BD62;
+    }
+    .vetor-tab-integracao-sap-2-mobile, .vetor-tab-integracao-sap-mobile{
+        stroke: #00BD62;
+    }
     .secao__produtos{
         padding-top: 5rem;
         padding-bottom: 3rem;
@@ -143,13 +172,21 @@
     .container__carrousel___tab-mobile{
         width: 86vw;
 
-        overflow-x: hidden;
+        overflow-x: scroll;
         overflow-y: hidden;
+
+        scrollbar-width: none;
+
+        user-select: none;
+    }
+    .container__carrousel___tab-mobile::-webkit-scrollbar{
+        display: none;
     }
     .lista__carrousel___tab-mobile{
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        gap: 2rem;
 
         width: auto;
 

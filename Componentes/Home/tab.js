@@ -1,8 +1,8 @@
-function openTab(event, nomeTab) {
+function openTab(evt, nomeTab) {
     // Declare all variables
     var i
-    var tabcontent 
-    var tablinks
+    let tabcontent 
+    let tablinks
   
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -18,7 +18,7 @@ function openTab(event, nomeTab) {
   
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(nomeTab).style.display = "flex";
-    event.currentTarget.className += " active";
+    evt.currentTarget.className += " active";
 
 
 }

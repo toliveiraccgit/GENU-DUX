@@ -13,6 +13,9 @@
 
         overflow-y: visible;
     }
+    .imagem__fale-conosco-mobile{
+        display: none;
+    }
     /*-----------------------DADOS-LGPD--------------------*/
     .secao__dados{
         display: flex;

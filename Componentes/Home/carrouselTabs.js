@@ -76,8 +76,8 @@ export class CarouselTab {
     }
 
     preparaSlides() {
-        this.slides.forEach((slide, i) => {
-            slide.style.left = this.tamanhoSlide * i + 'px'
+        this.slides.forEach((slide, l) => {
+            slide.style.left = this.tamanhoSlide * l + 'px'
         })
     }
 }

@@ -1,0 +1,73 @@
+@media (max-width:1200px){
+    .form__fale-conosco{
+        flex-direction: column;
+        width: 100vw;
+
+        padding-top: 3.5rem;
+    }
+    .imagem__fale-conosco-mobile{
+        display: block;
+
+        margin-bottom: 4rem;
+    }
+    /*-----------------------DADOS-LGPD--------------------*/
+    .secao__dados{
+        gap: 2rem;
+
+        width: 86vw;
+        height: auto;
+
+    }
+    .container__cabecalho___dados{
+        gap: 1rem;
+    }
+    .titulo__cabecalho___dados{
+        font-size: 29px;
+    }
+    .descricao__cabecalho___dados{
+        font-size: 14px;
+    }
+    .secao__form___dados{
+        gap: 1.5rem;
+
+        width: 86vw;
+    }
+    .secao__inputs___form{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .input__form{
+        width: 86vw;
+    }
+    .botao__entrar-login{
+        width: 86vw;
+    }
+    .botao__visualizar-senha{
+        left: 90%;
+    }
+    .container__checkmarck{
+        gap: .5rem;
+    }
+    .label__manter-login{
+        font-size: 12px;
+    }
+    .link__esquece-senha{
+        font-size: 12px;
+    }   
+    .secao__botoes___login{
+        width: 86vw;
+    }
+    .secao__botoes___lojas{
+        width: 86vw;
+
+        gap: 2rem;
+    }
+    .imagem__loja{
+        width: 7.813rem;
+    }
+    /*-----------------------BACKGROUND-GENU--------------------*/   
+    .secao__background-genu{
+        display: none;
+    }
+}

@@ -1,0 +1,95 @@
+@media (max-width:1200px){
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .form__fale-conosco{
+        flex-direction: column;
+        width: 100vw;
+    }
+    /*-----------------------DADOS-LGPD--------------------*/
+    .secao__dados{
+        flex-direction: column;
+        gap: 4.688rem;
+
+        width: 86vw;
+        height: auto;
+
+        padding-top: 9rem;
+        padding-bottom: 4rem;
+    }
+    .container__cabecalho___dados{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        width: 86vw;
+    }
+    .titulo__cabecalho___dados{
+        font-size: 29px;
+    }
+    .descricao__cabecalho___dados{
+        font-size: 14px;
+    }
+    .secao__form___dados{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        width: 86vw;
+    }
+    .titulo__form___dados{
+        font-family: var(--inter);
+        font-weight: var(--bold);
+        font-size: 21.8px;
+
+        color: #000000;
+
+        margin: 0%;
+    }
+    .secao__inputs___form{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .container__input___form{
+        display: flex;
+        flex-direction: column;
+    }
+    .input__form{
+        width: 86vw;
+    }
+    .text__area___form{
+        width: 86vw;
+    }
+    .botao__enviar___mensagem{
+        width: 86vw;
+    }
+    /*-----------------------MOTIVACAO--------------------*/
+    .secao__adress___fale-conosco{
+        flex-direction: column;
+        gap: 1rem;
+
+        width: 100vw;
+        height: auto;
+
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    } 
+    .container__card___adress{
+        width: 86vw;
+    }
+    .info__card___adress{
+        font-size: 14px;
+    }
+    .secao__adress___container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 86vw;
+    }
+}

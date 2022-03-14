@@ -234,6 +234,9 @@
             margin: 0%;
         }
         /*---------------------------SECAO-FUNCIONALIDADES----------------------------*/
+        #funcionalidades-mobile{
+            display: none;
+        }
         .secao__funcionalidades___produto{
             display: flex;
             flex-direction: column;
@@ -403,5 +406,11 @@
             .item__lista___funcionalidades{
             justify-content: space-between;
             }
+        }
+        .item-lista-mobile{
+            display: none;
+        }
+        .indicador-mobile{
+            display: none;
         }
 }
