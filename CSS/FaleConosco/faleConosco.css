@@ -306,4 +306,41 @@
        position: relative;
        top: .1rem;
     }
+    /*-----------------------CONCLUIDO---------------------*/
+    .secao__concluido{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+
+        width: 50vw;
+        height: 115vh;
+
+        padding-top: 6rem;
+    }
+    .titulo__concluido{
+        font-family: 'Graphik-SemiBold';
+        font-size: 40px;
+
+        color: #292A2C;
+
+        margin: 0%;
+
+        width: 33vw;
+    }
+    .descricao__concluido{
+        font-family: var(--inter);
+        font-weight: var(--medium);
+        font-size: 16px;
+
+        color: var(--low-light);
+
+        margin: 0%;
+
+        width: 33vw;
+    }
+    .imagem__concluido{
+        margin-top: 6.188rem;
+        margin-bottom: 6.188rem;
+    }
 }
