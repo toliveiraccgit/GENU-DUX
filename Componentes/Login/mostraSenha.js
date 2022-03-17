@@ -1,12 +1,12 @@
 document.getElementById('olho').addEventListener('mousedown', function() {
     document.getElementById('input-senha').type = 'text';
     document.getElementById('input-senha').focus()
-    olho.style.backgroundImage = ' url("../../Assets/Login/vetor-olho-aberto.svg") '
+    olho.style.backgroundImage = ' url("./Assets/Login/vetor-olho-aberto.svg") '
   });
   
   document.getElementById('olho').addEventListener('mouseup', function() {
     document.getElementById('input-senha').type = 'password';
-    olho.style.backgroundImage = ' url("../../Assets/Login/vetor-olho-fechado.svg") '
+    olho.style.backgroundImage = ' url("./Assets/Login/vetor-olho-fechado.svg") '
   });
   
   // Para que o password não fique exposto apos mover a imagem.
