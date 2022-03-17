@@ -66,6 +66,13 @@
         font-size: 16px;
 
         color: var(--low-medium);
+
+        transition: all .15s ease-in-out;
+    }
+    .link__termo-privacidade:hover{
+        color: var(--primary-dark);
+
+        transition: all .15s ease-in-out;
     }
     .secao__navegacao___footer{
         display: flex;

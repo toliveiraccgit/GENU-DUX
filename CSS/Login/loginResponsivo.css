@@ -65,6 +65,7 @@
     }
     .imagem__loja{
         width: 7.813rem;
+        height: auto;
     }
     /*-----------------------BACKGROUND-GENU--------------------*/   
     .secao__background-genu{

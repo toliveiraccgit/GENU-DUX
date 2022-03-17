@@ -21,7 +21,7 @@
         gap: 5.188rem;
 
         width: 50vw;
-        height: 115vh;
+        height: 61.25rem;
 
         padding-top: 6rem;
     }
@@ -164,7 +164,7 @@
         align-items: center;
 
         width: 50vw;
-        height: 115vh;
+        height: 63.25rem;
 
         padding-top: 15.688rem;
         padding-bottom: 7.625rem;
@@ -260,6 +260,10 @@
 
         transition: all .25s ease-in-out;
     }
+    .botao__enviar___lgpd:hover{
+        background-color: #E0E0E1;
+        transition: all .15s ease-in-out;
+    }
     .botao__enviar___lgpd:active{
         background-image: url("../../Assets/Interações/active-fale-conosco.svg");
         background-position-y: center;
@@ -277,7 +281,7 @@
         gap: 1.5rem;
 
         width: 50vw;
-        height: 115vh;
+        height: 61.25rem;
 
         padding-top: 6rem;
     }

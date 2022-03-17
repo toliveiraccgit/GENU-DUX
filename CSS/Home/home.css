@@ -75,11 +75,7 @@
             transition: all .15s ease-in-out;
         }
         .botao__agendar-apresentacao:hover{
-            border: 1px solid var(--primary-dark);
-
-            background-color: transparent;
-
-            color: var(--primary-dark);
+            background-color: #05733E;
 
             transition: all .15s ease-in-out;
         }
@@ -119,6 +115,9 @@
 
             transition: all .2s ease-in-out;
         }
+        .botao__saiba-mais___tab-mobile{
+            display: none;
+        }
         .imagem__banner{
             width: 36.469rem;
             height: 30.875rem;
@@ -148,7 +147,9 @@
             }
         }
         /*----------------------PRODUTOS---------------------*/
-
+        .svg-menor-tab{
+            width: 2.343rem;
+        }
         .secao__produtos{
             display: flex;
             flex-direction: column;

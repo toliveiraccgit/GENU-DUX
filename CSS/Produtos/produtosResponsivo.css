@@ -107,7 +107,7 @@
     }
     .titulo__info___produto{
         font-family: var(--inter);
-        font-weight: var(--semi-bold);
+        font-weight: var(--bold);
         font-size: 20px;
 
         line-height: 120%;

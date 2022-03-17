@@ -31,5 +31,14 @@ document.getElementById('olho').addEventListener('mousedown', function() {
     olho.style.backgroundImage = 'url("../../Assets/Login/vetor-olho-fechado.svg")'
   })
 
+  document.getElementById('olho').addEventListener('click', function() {
+    const larguraBody = screen.width
+
+    if (larguraBody <= 1025) {
+    document.getElementById('input-senha').type = 'text';
+    olho.style.backgroundImage = ' url("../../Assets/Login/vetor-olho-aberto.svg") '
+    }
+  });
+
 
   let olho = document.getElementById('olho')

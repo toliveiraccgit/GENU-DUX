@@ -21,7 +21,7 @@
         gap: 3.5rem;
 
         width: 50vw;
-        height: 115vh;
+        height: 61.25rem;
 
         padding-top: 6rem;
     }
@@ -30,7 +30,7 @@
         flex-direction: column;
         gap: 1.5rem;
 
-        width: 33vw;
+       width: 29.7rem;
     }
     .titulo__cabecalho___dados{
         font-family: 'Graphik-SemiBold';
@@ -54,7 +54,7 @@
         flex-direction: column;
         gap: 3.5rem;
 
-        width: 33vw;
+       width: 29.7rem;
     }
     .titulo__form___dados{
         font-family: var(--inter);
@@ -105,7 +105,7 @@
         border: 1px solid #828282;
         border-radius: 8px;
 
-        width: 33vw;
+        width: 29.7rem;
         height: 3.063rem;
 
         font-family: 'Graphik-Regular';
@@ -137,7 +137,7 @@
         border: 1px solid #828282;
         border-radius: 8px;
 
-        width: 33vw;
+       width: 29.7rem;
         height: 11.563rem;
 
         font-family: 'Graphik-Regular';
@@ -158,7 +158,7 @@
         transition: all .2s ease-in-out;
     }
     .botao__enviar___mensagem{
-        width: 33vw;
+       width: 29.7rem;
 
         border: none;
         background-color: var(--primary-dark);
@@ -185,6 +185,11 @@
 
         transition: all .4s ease-in-out;
     }
+    .botao__enviar___mensagem:hover{
+        background-color: #05733E;
+
+        transition: all .15s ease-in-out;
+    }
     .botao__enviar___mensagem:active{
         background-image: url("../../Assets/Interações/active-fale-conosco.svg");
         background-position-y: center;
@@ -202,7 +207,7 @@
         gap: 1.5rem;
 
         width: 50vw;
-        height: 100vh;
+        height: 61.25rem;
 
         padding-top: 15.688rem;
         padding-bottom: 7.625rem;
@@ -326,7 +331,7 @@
 
         margin: 0%;
 
-        width: 33vw;
+       width: 29.7rem;
     }
     .descricao__concluido{
         font-family: var(--inter);
@@ -337,7 +342,7 @@
 
         margin: 0%;
 
-        width: 33vw;
+       width: 29.7rem;
     }
     .imagem__concluido{
         margin-top: 6.188rem;

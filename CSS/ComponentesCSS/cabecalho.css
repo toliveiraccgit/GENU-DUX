@@ -37,6 +37,10 @@
 
         transition: all .15s ease-in-out;
     }
+    .item__navegacao:hover{
+        color: var(--primary-dark);
+        transition: all .15s ease-in-out;
+    }
     .container__dropdown:hover .item__navegacao{
         color: var(--primary-dark);
         transition: all .15s ease-in-out;
@@ -145,22 +149,22 @@
         transition: all .15s ease-in-out;
     }
     .item__saude-ocupacional:hover .vetor__saude-ocupacional{
-        stroke: #00BD62;
+        fill: #00BD62;
 
         transition: all .1s ease-in-out;
     }
     .item__seguranca-trabalho:hover .vetor__seguranca-trabalho{
-        stroke: #00BD62;
+        fill: #00BD62;
 
         transition: all .1s ease-in-out;
     }
     .item__relatorios:hover .vetor__relatorios{
-        stroke: #00BD62;
+        fill: #00BD62;
 
         transition: all .1s ease-in-out;
     }
     .item__e-social:hover .vetor__e-social{
-        stroke: #00BD62;
+        fill: #00BD62;
         transition: all .1s ease-in-out;
     }
     .item__integracao-sap:hover .vetor__integracao-sap{

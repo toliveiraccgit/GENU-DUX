@@ -13,7 +13,7 @@
     .secao__dados{
         display: flex;
         flex-direction: column;
-        gap: 4.688rem;
+        gap: 3.5rem;
 
         width: 86vw;
         height: auto;

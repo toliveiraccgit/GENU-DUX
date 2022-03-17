@@ -89,8 +89,8 @@
                     <div class="container__dropdown">
                         <div class="container__botao___dropdown">
                             <button class="item__navegacao botao__produtos" id="destaque-paginacao">Produtos</button>
-                            <svg class="seta__dropdown" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="seta__dropdown-color" d="M1 6L6 1L11 6" stroke="#A3A3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <svg id="destaque-paginacao-seta" class="seta__dropdown" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="destaque-paginacao-seta" class="seta__dropdown-color" d="M1 6L6 1L11 6" stroke="#A3A3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
 
@@ -127,9 +127,9 @@
                                 </li>
 
                                 <li class="item__lista___dropdown item__integracao-sap">
-                                    <svg id="destaque-paginacao-vetor" class="vetor__integracao-sap" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path id="destaque-paginacao-vetor" class="vetor__integracao-sap" d="M8.33398 10.8333C8.69186 11.3118 9.14845 11.7076 9.67278 11.9941C10.1971 12.2806 10.7769 12.4509 11.3729 12.4936C11.9688 12.5363 12.567 12.4503 13.1268 12.2415C13.6866 12.0327 14.1949 11.7059 14.6173 11.2833L17.1173 8.78333C17.8763 7.99749 18.2963 6.94498 18.2868 5.85249C18.2773 4.76 17.8391 3.71495 17.0666 2.94242C16.294 2.16989 15.249 1.73168 14.1565 1.72219C13.064 1.71269 12.0115 2.13267 11.2257 2.89166L9.79232 4.31666" stroke="#A3A3A3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path id="destaque-paginacao-vetor" class="vetor__integracao-sap" d="M11.6659 9.16667C11.308 8.68823 10.8514 8.29235 10.3271 8.00588C9.80274 7.71942 9.22293 7.54907 8.62698 7.50639C8.03103 7.46371 7.43287 7.54969 6.87307 7.75851C6.31327 7.96734 5.80493 8.29411 5.38252 8.71667L2.88252 11.2167C2.12353 12.0025 1.70355 13.055 1.71305 14.1475C1.72254 15.24 2.16075 16.285 2.93328 17.0576C3.70581 17.8301 4.75086 18.2683 5.84335 18.2778C6.93584 18.2873 7.98835 17.8673 8.77419 17.1083L10.1992 15.6833" stroke="#A3A3A3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg  class="vetor__integracao-sap" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="vetor__integracao-sap" d="M8.33398 10.8333C8.69186 11.3118 9.14845 11.7076 9.67278 11.9941C10.1971 12.2806 10.7769 12.4509 11.3729 12.4936C11.9688 12.5363 12.567 12.4503 13.1268 12.2415C13.6866 12.0327 14.1949 11.7059 14.6173 11.2833L17.1173 8.78333C17.8763 7.99749 18.2963 6.94498 18.2868 5.85249C18.2773 4.76 17.8391 3.71495 17.0666 2.94242C16.294 2.16989 15.249 1.73168 14.1565 1.72219C13.064 1.71269 12.0115 2.13267 11.2257 2.89166L9.79232 4.31666" stroke="#00BD62" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path class="vetor__integracao-sap" d="M11.6659 9.16667C11.308 8.68823 10.8514 8.29235 10.3271 8.00588C9.80274 7.71942 9.22293 7.54907 8.62698 7.50639C8.03103 7.46371 7.43287 7.54969 6.87307 7.75851C6.31327 7.96734 5.80493 8.29411 5.38252 8.71667L2.88252 11.2167C2.12353 12.0025 1.70355 13.055 1.71305 14.1475C1.72254 15.24 2.16075 16.285 2.93328 17.0576C3.70581 17.8301 4.75086 18.2683 5.84335 18.2778C6.93584 18.2873 7.98835 17.8673 8.77419 17.1083L10.1992 15.6833" stroke="#00BD62" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                     <a  id="destaque-paginacao"  class="item__lista___dropdown item__integracao-sap" href="./integracao-sap.html">Integração SAP</a>
                                 </li>
@@ -636,7 +636,9 @@
 
                     <div class="container__termos">
 
-                        <a href="#" class="link__termo-privacidade">Termos de uso |</a>
+                        <a href="#" class="link__termo-privacidade">Termos de uso</a>
+
+                        <span class="link__termo-privacidade"> |</span>
 
                         <a href="#" class="link__termo-privacidade">Política de privacidade</a>
 
@@ -714,7 +716,9 @@
 
                 <div class="container__termos">
 
-                    <a href="#" class="link__termo-privacidade">Termos de uso |</a>
+                    <a href="#" class="link__termo-privacidade">Termos de uso</a>
+
+                    <span class="link__termo-privacidade"> |</span>
 
                     <a href="#" class="link__termo-privacidade">Política de privacidade</a>
 

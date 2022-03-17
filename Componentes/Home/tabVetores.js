@@ -18,20 +18,10 @@ function tabSaude(){
     
     vetorSap.style.stroke = ` #00BD62 `
     vetorSap2.style.stroke = ` #00BD62 `
-
-    vetorSaude.style.stroke = ` #FFFFFF `
-    vetorSeguranca.style.stroke = ` #00BD62 `
-    vetorRelatorios.style.stroke = ` #00BD62 `
-    vetorSocial.style.stroke = ` #00BD62 `
     
 }
 
 function tabSeguranca(){
-    vetorSaude.style.stroke = ` #00BD62 `
-    vetorSeguranca.style.stroke = ` #FFFFFF `
-    vetorRelatorios.style.stroke = ` #00BD62 `
-    vetorSocial.style.stroke = ` #00BD62 `
-    
     vetorSap.style.stroke = ` #00BD62 `
     vetorSap2.style.stroke = ` #00BD62 `
 
@@ -44,11 +34,6 @@ function tabSeguranca(){
 }
 
 function tabRelatorios(){
-    vetorSaude.style.stroke = ` #00BD62 `
-    vetorSeguranca.style.stroke = ` #00BD62 `
-    vetorRelatorios.style.stroke = ` #FFFFFF `
-    vetorSocial.style.stroke = ` #00BD62 `
-
     vetorSap.style.stroke = ` #00BD62 `
     vetorSap2.style.stroke = ` #00BD62 `
 
@@ -60,11 +45,6 @@ function tabRelatorios(){
 }
 
 function tabSocial(){
-    vetorSaude.style.stroke = ` #00BD62 `
-    vetorSeguranca.style.stroke = ` #00BD62 `
-    vetorRelatorios.style.stroke = ` #00BD62 `
-    vetorSocial.style.stroke = ` #FFFFFF `
-    
     vetorSap.style.stroke = ` #00BD62 `
     vetorSap2.style.stroke = ` #00BD62 `
 
@@ -76,11 +56,6 @@ function tabSocial(){
 }
 
 function tabSap(){
-    vetorSaude.style.stroke = ` #00BD62 `
-    vetorSeguranca.style.stroke = ` #00BD62 `
-    vetorRelatorios.style.stroke = ` #00BD62 `
-    vetorSocial.style.stroke = ` #00BD62 `
-    
     vetorSap.style.stroke = ` #FFFFFF `
     vetorSap2.style.stroke = ` #FFFFFF `
 
