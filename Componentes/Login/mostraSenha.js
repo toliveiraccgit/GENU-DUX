@@ -12,23 +12,23 @@ document.getElementById('olho').addEventListener('mousedown', function() {
   // Para que o password não fique exposto apos mover a imagem.
   document.getElementById('olho').addEventListener('mousemove', function() {
     document.getElementById('input-senha').type = 'password';
-    olho.style.backgroundImage = ' url("../../Assets/Login/vetor-olho-fechado.svg") '
+    olho.style.backgroundImage = ' url("./Assets/Login/vetor-olho-fechado.svg") '
   });
 
 
   document.getElementById('input-senha').addEventListener('mousemove', function() {
-    olho.style.backgroundImage = ' url("../../Assets/Login/vetor-olho-fechado.svg") '
+    olho.style.backgroundImage = ' url("./Assets/Login/vetor-olho-fechado.svg") '
   });
 
   document.getElementById('olho').addEventListener('mouseleave', function() {
-    olho.style.backgroundImage = 'url("../../Assets/Login/vetor-olho-aberto.svg")'
+    olho.style.backgroundImage = 'url("./Assets/Login/vetor-olho-aberto.svg")'
   });
   document.getElementById('input-senha').addEventListener('mouseleave', function() {
-    olho.style.backgroundImage = 'url("../../Assets/Login/vetor-olho-fechado.svg")'
+    olho.style.backgroundImage = 'url("./Assets/Login/vetor-olho-fechado.svg")'
   });
 
   document.getElementById('input-senha').addEventListener('focus', function(){
-    olho.style.backgroundImage = 'url("../../Assets/Login/vetor-olho-fechado.svg")'
+    olho.style.backgroundImage = 'url("./Assets/Login/vetor-olho-fechado.svg")'
   })
 
   document.getElementById('olho').addEventListener('click', function() {
@@ -36,7 +36,7 @@ document.getElementById('olho').addEventListener('mousedown', function() {
 
     if (larguraBody <= 1025) {
     document.getElementById('input-senha').type = 'text';
-    olho.style.backgroundImage = ' url("../../Assets/Login/vetor-olho-aberto.svg") '
+    olho.style.backgroundImage = ' url("./Assets/Login/vetor-olho-aberto.svg") '
     }
   });
 
