@@ -18,6 +18,11 @@
         height: auto;
 
     }
+    #form-redefinir{
+        height: 100vh;
+        align-items: center;
+        padding-top: 10rem;
+    }
     .container__cabecalho___dados{
         gap: 1rem;
     }
@@ -41,6 +46,9 @@
         width: 86vw;
     }
     .botao__entrar-login{
+        width: 86vw;
+    }
+    .botao__redefinir-senha{
         width: 86vw;
     }
     .botao__visualizar-senha{
