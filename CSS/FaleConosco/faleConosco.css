@@ -175,7 +175,7 @@
 
         color: #FFFFFF;
 
-        background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+        background-image: url("../../Assets/Interacoes/active-fale-conosco.svg");
 
         background-position-x:center;
         background-position-y:center;
@@ -191,7 +191,7 @@
         transition: all .15s ease-in-out;
     }
     .botao__enviar___mensagem:active{
-        background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+        background-image: url("../../Assets/Interacoes/active-fale-conosco.svg");
         background-position-y: center;
         background-position-x: center;
 
@@ -235,7 +235,7 @@
 
         transition: all .1s ease-in-out;
 
-        background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+        background-image: url("../../Assets/Interacoes/active-fale-conosco.svg");
 
         background-position-x:center;
         background-position-y:center;
@@ -244,7 +244,7 @@
         background-size: 0% 0%;
     }
     .container__card___adress:active{
-        background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+        background-image: url("../../Assets/Interacoes/active-fale-conosco.svg");
         background-position-y: center;
         background-position-x: center;
 

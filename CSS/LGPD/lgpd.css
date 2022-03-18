@@ -218,7 +218,7 @@
 
         border: 2px solid #FFFFFF;
 
-        background-image: url("../../Assets/Vetores/vetoro-botao-check.svg");
+        background-image: url("../../Assets/Vetores/vetor-botao-check.svg");
         background-size: 1rem 1rem;
         background-repeat: no-repeat;
         background-position: center center;
@@ -250,7 +250,7 @@
 
         margin-top: 1.875rem;
 
-        background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+        background-image: url("../../Assets/Interacoes/active-fale-conosco.svg");
 
         background-position-x:center;
         background-position-y:center;
@@ -265,7 +265,7 @@
         transition: all .15s ease-in-out;
     }
     .botao__enviar___lgpd:active{
-        background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+        background-image: url("../../Assets/Interacoes/active-fale-conosco.svg");
         background-position-y: center;
         background-position-x: center;
 

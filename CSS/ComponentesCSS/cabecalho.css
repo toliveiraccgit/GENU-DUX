@@ -200,7 +200,7 @@
 
         transition: all .15s ease-in-out;
 
-        background-image: url("../../Assets/Interações/active-login.svg");
+        background-image: url("../../Assets/Interacoes/active-login.svg");
 
         background-position-x:center;
         background-position-y:center;
@@ -209,7 +209,7 @@
         background-size: 0% 0%;
     }
     .botao__login:active{
-        background-image: url("../../Assets/Interações/active-login.svg");
+        background-image: url("../../Assets/Interacoes/active-login.svg");
         background-position-y: center;
         background-position-x: center;
 
@@ -352,7 +352,7 @@
 
         transition: all .15s ease-in-out;
 
-        background-image: url("../../Assets/Interações/active-login.svg");
+        background-image: url("../../Assets/Interacoes/active-login.svg");
 
         background-position-x:center;
         background-position-y:center;
@@ -363,7 +363,7 @@
         text-align: center;
     }
     .botao__login___menu-aberto:active{
-        background-image: url("../../Assets/Interações/active-login.svg");
+        background-image: url("../../Assets/Interacoes/active-login.svg");
         background-position-y: center;
         background-position-x: center;
 

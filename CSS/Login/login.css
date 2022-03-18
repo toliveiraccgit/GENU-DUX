@@ -177,7 +177,7 @@
 
         color: #BBBBBB;
 
-        background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+        background-image: url("../../Assets/Interacoes/active-fale-conosco.svg");
 
         background-position-x:center;
         background-position-y:center;
@@ -197,7 +197,7 @@
         gap: 0.604rem;
     }
     .botao__entrar-login:active{
-        background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+        background-image: url("../../Assets/Interacoes/active-fale-conosco.svg");
         background-position-y: center;
         background-position-x: center;
 

@@ -90,7 +90,7 @@
             padding-bottom: 1rem;
             padding-right: 1rem;
 
-            background-image: url("../../Assets/Vetores/vetor-saiba-mais.svg"), url("../../Assets/Interações/active-saiba-mais.svg");
+            background-image: url("../../Assets/Vetores/vetor-saiba-mais.svg"), url("../../Assets/Interacoes/active-saiba-mais.svg");
             background-position-x: 1rem, center;
             background-position-y: center, center;
             background-repeat: no-repeat;
@@ -107,7 +107,7 @@
             transition: all .15s ease-in-out;
         }
         .botao__saiba-mais:active{
-            background-image: url("../../Assets/Vetores/vetor-saiba-mais.svg"), url("../../Assets/Interações/active-saiba-mais.svg");
+            background-image: url("../../Assets/Vetores/vetor-saiba-mais.svg"), url("../../Assets/Interacoes/active-saiba-mais.svg");
             background-position-y: center, center;
             background-position-x: 1rem, center;
 
@@ -671,7 +671,7 @@
 
             transition: all .15s ease-in-out;
 
-            background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+            background-image: url("../../Assets/Interacoes/active-fale-conosco.svg");
 
             background-position-x:center;
             background-position-y:center;
@@ -682,7 +682,7 @@
             transition: all .25s ease-in-out;
         }
         .botao__form___fale-conosco:active{
-            background-image: url("../../Assets/Interações/active-fale-conosco.svg");
+            background-image: url("../../Assets/Interacoes/active-fale-conosco.svg");
             background-position-y: center;
             background-position-x: center;
 
