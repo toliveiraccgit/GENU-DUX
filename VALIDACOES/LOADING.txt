@@ -1,0 +1,2 @@
+.tela__carregamento-ativo
+	*ADICIONAR CLASSE NA SECAO DE LOGIN AO CARREGAR*
