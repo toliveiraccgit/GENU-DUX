@@ -13,10 +13,16 @@
             align-items: center;
             justify-content: space-between;
 
-            width: 82vw;
+            width: 100vw;
 
             padding-top: 6rem;
+            padding-left: 9vw;
+            padding-right: 9vw;
+            padding-bottom: 6rem;
             
+            background-image: url("../../Assets/Imagens/vetor-background-banner.svg");
+            background-repeat: no-repeat;
+            background-position: right center;
         }
         @media (min-width:1981px){
             .secao__banner{
@@ -85,33 +91,38 @@
 
             color: #BBBBBB;
 
-            padding-left: 2.75rem;
+            padding-left: 1.104rem;
             padding-top: 1rem;
             padding-bottom: 1rem;
-            padding-right: 1rem;
+            padding-right: .5rem;
 
-            background-image: url("../../Assets/Vetores/vetor-saiba-mais.svg"), url("../../Assets/Interacoes/active-saiba-mais.svg");
-            background-position-x: 1rem, center;
-            background-position-y: center, center;
+            background-image: url("../../Assets/Interacoes/active-saiba-mais.svg");
+            background-position-x: center;
+            background-position-y: center;
             background-repeat: no-repeat;
             
-            background-size: auto auto, 0% 0%;
+            background-size: 0% 0%;
 
             transition: all .15s ease-in-out;
 
             border-radius: 8px;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.604rem;
         }
         .botao__saiba-mais:hover{
-            background-color: #E3E5E6;
+            background-color: var(--primary-dark);
 
             transition: all .15s ease-in-out;
         }
         .botao__saiba-mais:active{
-            background-image: url("../../Assets/Vetores/vetor-saiba-mais.svg"), url("../../Assets/Interacoes/active-saiba-mais.svg");
-            background-position-y: center, center;
-            background-position-x: 1rem, center;
+            background-image: url("../../Assets/Interacoes/active-saiba-mais.svg");
+            background-position-y: center;
+            background-position-x: center;
 
-            background-size: auto auto, 200% 200%;
+            background-size: 200% 200%;
 
             transition: all .2s ease-in-out;
         }
@@ -119,8 +130,7 @@
             display: none;
         }
         .imagem__banner{
-            width: 38.209rem;
-            height: 38.463rem;
+            width: 36.438rem;
 
             position: relative;
 
@@ -271,8 +281,8 @@
 
             padding-top: 1rem;
             padding-bottom: 1rem;
-            padding-left: 2.75rem;
-            padding-right: .8rem;
+            padding-left: 1.104rem;
+            padding-right: .5rem;
 
 
             font-family: 'Graphik-SemiBold';
@@ -280,9 +290,24 @@
 
             color: var(--primary-dark);
 
-            background-image: url("../../Assets/Vetores/vetor-saiba-mais-verde.svg");
-            background-repeat: no-repeat;
-            background-position: 1rem center ;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.604rem;
+
+            transition: all .15s ease-in-out;
+        }
+        .botao__saiba-mais___tab:hover{
+            background-color: var(--primary-dark);
+
+            color: #FFFFFF;
+
+            transition: all .15s ease-in-out;
+        }
+        .botao__saiba-mais___tab:hover .vetor-saiba-mais{
+            stroke: #FFFFFF;
+
+            transition: all .15s ease-in-out;
         }
         .secao__cards___tab{
             display: flex;

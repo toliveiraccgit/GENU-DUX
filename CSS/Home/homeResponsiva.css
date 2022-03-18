@@ -18,9 +18,13 @@
     }
     /*-------------------------BANNER----------------------*/
     .secao__banner{
-        width: 86vw;
+        width: 100vw;
 
         padding-top: 2.5rem;
+
+        padding-left: 7vw;
+        padding-right: 7vw;
+        padding-bottom: 6rem;
     }
     .secao__imagem___banner{
         display: none;

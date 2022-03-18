@@ -18,9 +18,13 @@
     }
     /*---------------------------BANNER-----------------------*/
     .secao__banner{
-        width: 86vw;
+        width: 100vw;
 
         padding-top: 2.5rem;
+
+        padding-left: 7vw;
+        padding-right: 7vw;
+        padding-bottom: 6rem;
     }
     .secao__info___banner {
         gap: 1rem;
@@ -66,6 +70,10 @@
     }
     .cabecalho__conteudo___produto{
         width: 86vw;
+
+        gap: 1rem;
+        
+        margin-bottom: 3rem;
     }
     .titulo__conteudo___produto{
         font-size: 20px;

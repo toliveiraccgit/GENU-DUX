@@ -6,7 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="./CSS/Login/login.css">
+        <link rel="stylesheet" href="./CSS/RedefinicaoSenha/redefinicaoSenha.css">
         <link rel="stylesheet" href="./CSS/Login/loginResponsivo.css">
         <link rel="stylesheet" href="./CSS/animacaoScroll.css">
         <link rel="stylesheet" href="./CSS/ComponentesCSS/cabecalho.css">
@@ -74,7 +74,7 @@
         <link href="./CSS/reset.css" rel="stylesheet">
         <link href="./CSS/normalize.css" rel="stylesheet">
         <link href="./CSS/loading.css" rel="stylesheet">
-        <title>Login | GENU</title>
+        <title>Redefinir Senha | GENU</title>
         <link rel="shortcut icon" href="./Assets/Vetores/ICO-FAVICON-GENU.svg" type="image/x-icon"/>
     </head>
 
@@ -105,8 +105,8 @@
 
                     <div class="container__cabecalho___dados">
 
-                        <h1 class="titulo__cabecalho___dados">Bem-vindo</h1>
-                        <p class="descricao__cabecalho___dados">Faça login para acessar a plataforma</span></p>
+                        <h1 class="titulo__cabecalho___dados">Redefinir senha</h1>
+                        <p class="descricao__cabecalho___dados">Preencha seu email abaixo para redefinir a senha</span></p>
 
                     </div>
 
@@ -121,34 +121,9 @@
                                 <span class="mensagem__erro-email">Email incorreto ou não cadastrado</span>
                             </div>
 
-                            <div class="container__input___form">
-
-                                <label for="Nome" class="label__input___form" id="label-senha">Senha</label>
-                                <input type="password" class="input__form" id="input-senha" required onblur="desativaLabelSenha()" onfocus="ativaLabelSenha()">
-
-                                <button type="button" class="botao__visualizar-senha" id="olho"></button>
-
-                                <span class="mensagem__erro-senha">Senha incorreta</span>
-
-                            </div>
-                            <section class="secao__botoes___login">
-
-                                <div class="container__checkmarck">
-
-                                    <div class="container__input___checkmarck">
-                                        <input name="Manter Conectado" type="checkbox" class="input__manter-conectado">
-                                    </div>
-
-                                    <label for="Manter Conectado" class="label__manter-login">Mantenha-me conectado</label>
-
-                                </div>
-                                
-                                <a href="./redefinicao-senha.html" class="link__esquece-senha">Esqueci a senha</a>
-
-                            </section>
                         </section>
 
-                        <button type="submit" class="botao__entrar-login"> 
+                        <button type="submit" class="botao__redefinir-senha"> 
                             <svg class="botao-loading-login" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.99935 17.8333C14.6017 17.8333 18.3327 14.1023 18.3327 9.49996C18.3327 4.89759 14.6017 1.16663 9.99935 1.16663C5.39698 1.16663 1.66602 4.89759 1.66602 9.49996" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -157,24 +132,9 @@
                                 <path d="M14.6673 1L5.50065 10.1667L1.33398 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
 
-                            Entrar
+                            Enviar
                         </button>
 
-                        <section class="secao__botoes___lojas">
-
-                            <a href="#" class="botao__loja">
-
-                                <img src="./Assets/Login/GOOGLE-PLAY.png" alt="GOOGLE PLAY" class="imagem__loja">
-
-                            </a>
-
-                            <a href="#" class="botao__loja">
-
-                                <img src="./Assets/Login/APP-STORE.png" alt="GOOGLE PLAY" class="imagem__loja">
-
-                            </a>
-
-                        </section>
                     </section>
                 </form>
 
