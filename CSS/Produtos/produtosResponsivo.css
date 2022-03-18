@@ -69,11 +69,14 @@
         padding-top: 4rem;
     }
     .cabecalho__conteudo___produto{
-        width: 86vw;
+        width: 100vw;
 
         gap: 1rem;
         
         margin-bottom: 3rem;
+
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .titulo__conteudo___produto{
         font-size: 20px;
