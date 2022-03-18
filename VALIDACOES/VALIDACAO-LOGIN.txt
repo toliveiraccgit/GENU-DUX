@@ -1,0 +1,33 @@
+/*-----------------VARIANTES-BOTAO-LOGIN----------------*/
+        /*----------INPUT-PREENCHIDO----------*/
+        .botao__entrar-login-preenchido
+		*ADICIONAR CLASSE NO BOTÃO DE LOGIN AO PREENCHER TODO O FORMULÁRIO*
+
+
+        /*------------INPUT-LOADING----------*/
+        .botao-loading-login__ativado
+      		*ADICIONAR CLASSE NO BOTÃO DE LOGIN AO CARREGAR*
+
+        /*------------LOGIN-CONCLUIDO----------*/
+        .vetor-check-login-ativado
+		*ADICIONAR CLASSE NO BOTÃO DE LOGIN CONCLUIR*
+
+
+    /*-----------------------VALIDACAO-LOGIN--------------------*/
+
+        /*------------LOGIN-EMAIL-ERRADO----------*/
+        .mensagem__erro-email-ativo
+		*ADICIONAR CLASSE NO TEXTO DE EMAIL INCORRETO*
+
+
+        /*------------LOGIN-SENHA-ERRADA----------*/
+        .mensagem__erro-senha-ativo
+		*ADICIONAR CLASSE NO TEXTO DE SENHA INCORRETA*
+
+        /*------------INPUT-LABEL-VALIDACAO----------*/
+        .input-erro__ativo
+		*ADICIONAR CLASSE NO INPUT DE EMAIL INCORRETO*
+
+        .label__input___form-erro
+		*ADICIONAR CLASSE NO INPUT DE SENHA INCORRETA*
+

@@ -274,6 +274,9 @@
         transition: all .25s ease-in-out;
     }
     /*-----------------------CONCLUIDO---------------------*/
+    .secao__concluido-ativo{
+        display: flex;
+    }
     .secao__concluido{
         display: none;
         flex-direction: column;

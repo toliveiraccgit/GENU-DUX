@@ -16,7 +16,7 @@
     .imagem__fale-conosco-mobile{
         display: none;
     }
-    /*-----------------------DADOS-LGPD--------------------*/
+    /*-----------------------DADOS-LOGIN--------------------*/
     .secao__dados{
         display: flex;
         flex-direction: column;
@@ -205,7 +205,7 @@
 
         transition: all .4s ease-in-out;
     }
-    @keyframes animalLoading {
+    @keyframes animaLoading {
         100%{
             transform: rotate(360deg)
         }
@@ -298,65 +298,76 @@
         height: auto;
     }
     /*-----------------VARIANTES-BOTAO-LOGIN----------------*/
-    .botao__entrar-login-preenchido{
-        background-color: var(--primary-dark);
-        color: #FFFFFF;
-    }
-    .botao__entrar-login-preenchido:hover{
-        background-color: #00703A;
-        transition: all .15s ease-in-out;
-    }
-    .botao-loading-login{
-        display: none;
-    }
-    .botao-loading-login__ativado{
-        display: block;
-        animation: animalLoading .8s ease-in-out infinite;
-    }
-    .vetor-check-login{
-        display: none;
-    }
-    .vetor-check-login-ativado{
-        display: block;
-    }
+        /*----------INPUT-PREENCHIDO----------*/
+        .botao__entrar-login-preenchido{
+            background-color: var(--primary-dark);
+            color: #FFFFFF;
+        }
+        .botao__entrar-login-preenchido:hover{
+            background-color: #00703A;
+            transition: all .15s ease-in-out;
+        }
+        /*------------INPUT-LOADING----------*/
+        .botao-loading-login{
+            display: none;
+        }
+        .botao-loading-login__ativado{
+            display: block;
+            animation: animaLoading .8s ease-in-out infinite;
+        }
+        @keyframes animaLoading {
+            100%{
+                transform: rotate(360deg)
+            }
+        }
+        /*------------LOGIN-CONCLUIDO----------*/
+        .vetor-check-login{
+            display: none;
+        }
+        .vetor-check-login-ativado{
+            display: block;
+        }
     /*-----------------------VALIDACAO-LOGIN--------------------*/
-    .mensagem__erro-email{
-        font-family: var(--inter);
-        font-weight: var(--regular);
+        /*------------LOGIN-EMAIL-ERRADO----------*/
+        .mensagem__erro-email{
+            font-family: var(--inter);
+            font-weight: var(--regular);
 
-        margin-top: .5rem;
+            margin-top: .5rem;
 
-        color: #EB3F3F;
+            color: #EB3F3F;
 
-        display: none;
-    }
-    .mensagem__erro-email-ativo{
-        display: block;
-    }
-    .mensagem__erro-senha{
-        font-family: var(--inter);
-        font-weight: var(--regular);
+            display: none;
+        }
+        .mensagem__erro-email-ativo{
+            display: block;
+        }
+        /*------------LOGIN-SENHA-ERRADA----------*/
+        .mensagem__erro-senha{
+            font-family: var(--inter);
+            font-weight: var(--regular);
 
-        color: #EB3F3F;
+            color: #EB3F3F;
 
-        position: relative;
-        top: -.8rem;
+            position: relative;
+            top: -.8rem;
 
-        display: none;
-    }
-    .mensagem__erro-senha-ativo{
-        display: block;
-    }
-    .input-erro__ativo{
-        border: 1px solid #EB3F3F;
-    }
-    .input-erro__ativo:focus{
-        outline: 1px solid #EB3F3F;
-        border: 1px solid #EB3F3F;
-    }
-    .label__input___form-erro{
-        color: #EB3F3F;
-    }
+            display: none;
+        }
+        .mensagem__erro-senha-ativo{
+            display: block;
+        }
+        /*------------INPUT-LABEL-VALIDACAO----------*/
+        .input-erro__ativo{
+            border: 1px solid #EB3F3F;
+        }
+        .input-erro__ativo:focus{
+            outline: 1px solid #EB3F3F;
+            border: 1px solid #EB3F3F;
+        }
+        .label__input___form-erro{
+            color: #EB3F3F;
+        }
     
     /*-----------------------BACKGROUND-GENU--------------------*/   
     .secao__background-genu{
